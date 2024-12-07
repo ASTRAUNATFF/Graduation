@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Trường Mầm Non</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f8f9fa;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 20px;
+        background: #e9ecef;
+    }
+
+        .hero img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+        margin: 10px 0;
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background: #e9f7e1;
+    }
+
+    .feature-item {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        flex: 1;
+        margin: 0 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .feature-item h2 {
+            color: #2c8f2e;
+        }
+
+        .feature-item a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+    .cta {
+        text-align: center;
+        padding: 20px;
+        background: #92e08e;
+        color: white;
+    }
+
+        .cta button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    .unique {
+        padding: 20px;
+        background: #fdf8f1;
+    }
+
+        .unique h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    .unique-item {
+        margin-bottom: 20px;
+    }
+
+
+   
+
+    .contact-list li {
+        list-style: none;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    /* Subscribe Form */
+    .subscribe-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+        .subscribe-form input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #ffc107;
+            color: #343a40;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .subscribe-form button:hover {
+                background-color: #e0a800;
+            }
+
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+        .social-icons li {
+            list-style: none;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #ffc107;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+            .social-icons a:hover {
+                color: #e0a800;
+            }
+
+   
+
+
+</style>
+
+<body>
+  
+
+
+
+    <section class="hero" id="home">
+        <img src="~/images/introduce.png" alt="Hình ảnh giới thiệu" />
+        <div class="hero-text">
+            <h1>Giới Thiệu Về Trường</h1>
+            <p>
+                Trường Mầm Non Song Ngữ TT ra đời với sứ mệnh nuôi dưỡng và phát triển tối đa tiềm năng sáng tạo của từng em nhỏ, khai phóng những khả năng đặc biệt về mọi mặt. Chúng tôi tự hào đồng hành cùng Quý phụ huynh trong hành trình mang đến một nền giáo dục chất lượng cao, đầy tính nhân văn cho những năm tháng đầu đời của trẻ. Với chúng tôi, mỗi đứa trẻ đều có thể tỏa sáng theo cách riêng của mình.
+
+                Dựa trên triết lý giáo dục Khai phóng (Liberal Arts), Thang tư duy Bloom (Bloom’s Taxonomy) và thuyết Đa trí tuệ (Theory of Multiple Intelligences), chương trình giảng dạy tại trường được thiết kế nhằm xây dựng nền tảng đạo đức vững chắc thông qua chương trình Giá trị sống – Kỹ năng sống (Living Values & Life Skills), kích thích tư duy sáng tạo (Creative Thinking) và cá nhân hóa giảng dạy theo năng lực riêng biệt của từng trẻ (Standards-based Curriculum). Chúng tôi cam kết mang đến những giờ học đầy thú vị, khơi dậy niềm đam mê học tập suốt đời cho các em, từ đó tạo nên những trải nghiệm học tập phong phú và đa dạng.
+
+                Chúng tôi tin tưởng rằng môi trường giáo dục tại Trường Mầm Non Song Ngữ TT sẽ mang đến cho con em Quý phụ huynh một không gian học tập an toàn, toàn diện và đầy cảm hứng, với những trải nghiệm tuổi thơ đáng nhớ. Tại đây, trẻ không chỉ học kiến thức mà còn học cách yêu thương, sẻ chia và tôn trọng lẫn nhau.
+
+                Mỗi đứa trẻ là một viên ngọc quý cần được mài giũa. Chúng tôi hy vọng sẽ nhận được sự tin tưởng và đồng hành từ Quý phụ huynh trong hành trình giúp trẻ tỏa sáng và trở thành những công dân tài năng, hữu ích cho xã hội mai sau. Chính sự gắn kết chặt chẽ giữa nhà trường và gia đình sẽ tạo nên nền tảng vững chắc cho tương lai của trẻ.
+            </p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <h2>KINH NGHIỆM NHIỀU ĐẦY</h2>
+            <p>Trường đã thành lập vào năm 2020...</p>
+            <a href="#">Xem thêm</a>
+        </div>
+        <div class="feature-item">
+            <h2>HOẠT ĐỘNG HỌC TẬP</h2>
+            <p>Được thiết kế theo các tiêu chuẩn quốc tế...</p>
+            <a href="#">Xem thêm</a>
+        </div>
+        <div class="feature-item">
+            <h2>CẬP NHẬT KỊP XU HƯỚNG</h2>
+            <p>Chương trình giáo dục hiện đại...</p>
+            <a href="#">Xem thêm</a>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>THÔNG BÁO TRƯỜNG MẦM NON</h2>
+        <p>Trường Mầm Non TT Tỏa Sáng...</p>
+        <button>Tìm hiểu</button>
+    </section>
+
+    <section class="unique">
+        <h2>Trường Mầm Non TT Và Những Điều Khác Biệt</h2>
+        <div class="unique-item">
+            <h3>Ngôi nhà của yêu thương</h3>
+            <p>Môi trường thân thiện...</p>
+        </div>
+        <div class="unique-item">
+            <h3>Hợp tác quốc tế</h3>
+            <p>Chương trình giảng dạy...</p>
+        </div>
+    </section>
+
+    
+
+
+
+</body>
+</html>
+
+            <script>
+    // Thay đổi màu khi hover vào menu
+    document.querySelectorAll(".navbar ul li").forEach(item => {
+        item.addEventListener("mouseover", () => {
+            item.style.color = "#007bff"; // Thay đổi màu khi hover
+        });
+
+        item.addEventListener("mouseout", () => {
+            item.style.color = "#333"; // Trở về màu gốc
+        });
+    });
+
+    // Cuộn mượt mà khi nhấp vào liên kết trong menu
+    document.querySelectorAll(".navbar a").forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").replace("#", "");
+            const target = document.getElementById(targetId);
+
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // Hiệu ứng tải động (nếu cần)
+    window.addEventListener("load", () => {
+        const heroText = document.querySelector(".hero-text");
+        if (heroText) {
+            heroText.style.opacity = 1;
+            heroText.style.transform = "translateY(0)";
+        }
+    });
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("mouseover", () => {
+            link.style.color = "#007bff";
+        });
+        link.addEventListener("mouseout", () => {
+            link.style.color = "#333";
+        });
+    });
+
+            </script>
