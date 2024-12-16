@@ -1,339 +1,447 @@
 {
   "Files": [
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Kindergarten school.bundle.scp.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Kindergarten school.bundle.scp.css",
       "PackagePath": "staticwebassets\\Kindergarten school.bundle.scp.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\css\\home.css",
+      "PackagePath": "staticwebassets\\assets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\Vector (5).png",
+      "PackagePath": "staticwebassets\\assets\\images\\Vector (5).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\Vector (6).png",
+      "PackagePath": "staticwebassets\\assets\\images\\Vector (6).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\Vector (7).png",
+      "PackagePath": "staticwebassets\\assets\\images\\Vector (7).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\about_us.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about_us.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\banner-home.png",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-home.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\bong-bay.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bong-bay.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\child.png",
+      "PackagePath": "staticwebassets\\assets\\images\\child.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\env.png",
+      "PackagePath": "staticwebassets\\assets\\images\\env.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\facebook (2).png",
+      "PackagePath": "staticwebassets\\assets\\images\\facebook (2).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\fi-rr-diamond.png",
+      "PackagePath": "staticwebassets\\assets\\images\\fi-rr-diamond.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\fi-rr-quote-right.png",
+      "PackagePath": "staticwebassets\\assets\\images\\fi-rr-quote-right.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\fi-rr-rocket.png",
+      "PackagePath": "staticwebassets\\assets\\images\\fi-rr-rocket.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\fi-rr-user.png",
+      "PackagePath": "staticwebassets\\assets\\images\\fi-rr-user.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\home.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\image (1).png",
+      "PackagePath": "staticwebassets\\assets\\images\\image (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\image (2).png",
+      "PackagePath": "staticwebassets\\assets\\images\\image (2).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\image (3).png",
+      "PackagePath": "staticwebassets\\assets\\images\\image (3).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\instagram (1).png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\lib.png",
+      "PackagePath": "staticwebassets\\assets\\images\\lib.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\linkedin (1).png",
+      "PackagePath": "staticwebassets\\assets\\images\\linkedin (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\mail.png",
+      "PackagePath": "staticwebassets\\assets\\images\\mail.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\study.png",
+      "PackagePath": "staticwebassets\\assets\\images\\study.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\tro-choi-van-dong-ngoai-troi-cho-tre-mam-non-01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\tro-choi-van-dong-ngoai-troi-cho-tre-mam-non-01.png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\assets\\images\\youtube (1).png",
+      "PackagePath": "staticwebassets\\assets\\images\\youtube (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\introduce.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\introduce.png",
       "PackagePath": "staticwebassets\\images\\introduce.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\logo.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v33_44.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v33_44.png",
       "PackagePath": "staticwebassets\\images\\v33_44.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_24.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_24.png",
       "PackagePath": "staticwebassets\\images\\v55_24.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_25.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_25.png",
       "PackagePath": "staticwebassets\\images\\v55_25.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_27.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_27.png",
       "PackagePath": "staticwebassets\\images\\v55_27.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_29.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_29.png",
       "PackagePath": "staticwebassets\\images\\v55_29.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_34.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_34.png",
       "PackagePath": "staticwebassets\\images\\v55_34.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_36.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_36.png",
       "PackagePath": "staticwebassets\\images\\v55_36.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_38.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_38.png",
       "PackagePath": "staticwebassets\\images\\v55_38.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_40.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_40.png",
       "PackagePath": "staticwebassets\\images\\v55_40.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_73.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_73.png",
       "PackagePath": "staticwebassets\\images\\v55_73.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_74.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_74.png",
       "PackagePath": "staticwebassets\\images\\v55_74.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_75.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_75.png",
       "PackagePath": "staticwebassets\\images\\v55_75.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_76.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_76.png",
       "PackagePath": "staticwebassets\\images\\v55_76.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_77.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_77.png",
       "PackagePath": "staticwebassets\\images\\v55_77.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_78.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_78.png",
       "PackagePath": "staticwebassets\\images\\v55_78.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_79.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_79.png",
       "PackagePath": "staticwebassets\\images\\v55_79.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_80.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v55_80.png",
       "PackagePath": "staticwebassets\\images\\v55_80.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v56_118.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v56_118.png",
       "PackagePath": "staticwebassets\\images\\v56_118.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v57_119.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v57_119.png",
       "PackagePath": "staticwebassets\\images\\v57_119.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v58_120.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v58_120.png",
       "PackagePath": "staticwebassets\\images\\v58_120.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v58_121.png",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\images\\v58_121.png",
       "PackagePath": "staticwebassets\\images\\v58_121.png"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Thinh Nguyen\\OneDrive\\Desktop\\Thương mại điện tử\\Kindergarten school\\Kindergarten school\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

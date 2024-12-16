@@ -8388,19 +8388,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hophu\\.nuget\\packages\\": {}
+    "C:\\Users\\Thinh Nguyen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Kindergarten school.csproj",
+      "projectUniqueName": "D:\\gitclone\\Graduation\\Graduation\\Kindergarten school\\Kindergarten school\\Kindergarten school.csproj",
       "projectName": "Kindergarten school",
-      "projectPath": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Kindergarten school.csproj",
-      "packagesPath": "C:\\Users\\hophu\\.nuget\\packages\\",
-      "outputPath": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\obj\\",
+      "projectPath": "D:\\gitclone\\Graduation\\Graduation\\Kindergarten school\\Kindergarten school\\Kindergarten school.csproj",
+      "packagesPath": "C:\\Users\\Thinh Nguyen\\.nuget\\packages\\",
+      "outputPath": "D:\\gitclone\\Graduation\\Graduation\\Kindergarten school\\Kindergarten school\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hophu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Thinh Nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8482,7 +8482,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

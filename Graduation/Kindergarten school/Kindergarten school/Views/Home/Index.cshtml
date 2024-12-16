@@ -1,293 +1,687 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Trường Mầm Non</title>
-    <link rel="stylesheet" href="~/css/styles.css" />
-</head>
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+@section Styles{
+    <link href="~/assets/css/home.css" rel="stylesheet" />
+}
+<section id="banner-home">
+    <div class="container-fluid pb-9">
+        <div class="banner-home">
+            <img src="/assets/images/banner-home.png" alt="banner" class="img-fluid">
+        </div>
+        <div class="about-text">
+            <h3>giới thiệu về trường</h3>
+            <div class="text-decription">
+                <p>
+                    Trường Mầm Non Song Ngữ TT ra đời với sứ mệnh nuôi dưỡng và phát triển tối đa tiềm năng sáng tạo
+                    của từng em nhỏ, khai phóng những khả năng đặc biệt về mọi mặt. Chúng tôi tự hào đồng hành cùng
+                    Quý phụ huynh trong hành trình mang đến một nền giáo dục chất lượng cao, đầy tính nhân văn cho
+                    những năm tháng đầu đời của trẻ. Với chúng tôi, mỗi đứa trẻ đều có thể tỏa sáng theo cách riêng
+                    của mình.
+                </p>
+                <p>
+                    Dựa trên triết lý giáo dục Khai phóng (Liberal Arts), Thang tư duy Bloom (Bloom’s Taxonomy) và
+                    thuyết Đa trí tuệ (Theory of Multiple Intelligences), chương trình giảng dạy tại trường được
+                    thiết kế nhằm xây dựng nền tảng đạo đức vững chắc thông qua chương trình Giá trị sống – Kỹ năng
+                    sống (Living Values & Life Skills), kích thích tư duy sáng tạo (Creative Thinking) và cá nhân
+                    hóa giảng dạy theo năng lực riêng biệt của từng trẻ (Standards-based Curriculum). Chúng tôi cam
+                    kết mang đến những giờ học đầy thú vị, khơi dậy niềm đam mê học tập suốt đời cho các em, từ đó
+                    tạo nên những trải nghiệm học tập phong phú và đa dạng.
+                </p>
+                <p>
+                    Chúng tôi tin tưởng rằng môi trường giáo dục tại Trường Mầm Non Song Ngữ TT sẽ mang đến cho con
+                    em Quý phụ huynh một không gian học tập an toàn, toàn diện và đầy cảm hứng, với những trải
+                    nghiệm tuổi thơ đáng nhớ. Tại đây, trẻ không chỉ học kiến thức mà còn học cách yêu thương, sẻ
+                    chia và tôn trọng lẫn nhau.
+                </p>
+                <p>
+                    Mỗi đứa trẻ là một viên ngọc quý cần được mài giũa. Chúng tôi hy vọng sẽ nhận được sự tin tưởng
+                    và đồng hành từ Quý phụ huynh trong hành trình giúp trẻ tỏa sáng và trở thành những công dân tài
+                    năng, hữu ích cho xã hội mai sau. Chính sự gắn kết chặt chẽ giữa nhà trường và gia đình sẽ tạo
+                    nên nền tảng vững chắc cho tương lai của trẻ.
+                </p>
+            </div>
+        </div>
+    </div>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+</section>
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #f8f9fa;
-        padding: 10px 20px;
-    }
+<section id="notification-home">
+    <div class="card-container">
+        <div class="card card-green">
+            <h2 class="card-title">KINH NGHIỆM NUÔI DẠY</h2>
+            <ul>
+                <li>
+                    <p class="card-content">
+                        - Bí quyết bảo vệ sức khỏe cho trẻ trong mùa dịch Corona – Mẹo dạy con từ bộ lịch 2020
+                    </p>
+                </li>
+            </ul>
 
-    .logo img {
-        height: 50px;
-    }
+            <div class="d-flex justify-content-end">
+                <a href="#" class="card-button">Xem thêm</a>
 
-    .navbar ul {
-        list-style: none;
-        display: flex;
-        gap: 15px;
-        margin: 0;
-        padding: 0;
-    }
+            </div>
+        </div>
+        <div class="card card-blue">
+            <h2 class="card-title">HOẠT ĐỘNG HỌC TẬP</h2>
+            <ul>
+                <li>
+                    <p class="card-content">
+                        - Cuộc đua xe chòi chân đầy hào hứng – Dạy trẻ cách bày tỏ cảm xúc chân thành, tự nhiên
+                    </p>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-end">
+                <a href="#" class="card-button">Xem thêm</a>
 
-    .navbar a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
+            </div>
+        </div>
+        <div class="card card-purple">
+            <h2 class="card-title">CẬP NHẬT SỰ KIỆN</h2>
+            <ul>
+                <li>
+                    <p class="card-content">
+                        - Chuyên đề về Trang phục – Kiến trúc
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        - Mua sắm thực phẩm
+                    </p>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-end">
+                <a href="#" class="card-button">Xem thêm</a>
 
-    .hero {
-        text-align: center;
-        padding: 20px;
-        background: #e9ecef;
-    }
+            </div>
+        </div>
 
-        .hero img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-        }
+    </div>
+    <div class="bg-green-main d-flex align-items-end ">
 
-    .hero-text h1 {
-        font-size: 2.5em;
-        margin: 10px 0;
-    }
+        <div class="text-normal  w-100 d-flex justify-content-evenly align-items-center">
+            <div class="notification-text">
+                <h4>THÔNG BÁO TRƯỜNG MẦM NON</h4>
+                <p>Trường Mầm Non Song Ngữ Trẻ Sáng Tạo trân trọng thông báo!</p>
+            </div>
+            <a href="#" class="btn-white">TÌM HIỂU</a>
+        </div>
+    </div>
+</section>
 
-    .features {
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
-        background: #e9f7e1;
-    }
+<section id="children">
+    <div class="container-fluid">
+        <h3>Trường Mầm Non TT Và Những Điều Khác Biệt</h3>
+        <div class="icon-with-line">
+            <div class="line align-items-end">
+                <div class="line-he line-top"></div>
+                <div class="line-he line-bottom"></div>
 
-    .feature-item {
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        flex: 1;
-        margin: 0 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+            </div>
+            <div>
+                <img src="/assets/images/bong-bay.png" alt="">
+            </div>
+            <div class="line">
+                <div class="line-he line-top"></div>
+                <div class="line-he line-bottom"></div>
 
-        .feature-item h2 {
-            color: #2c8f2e;
-        }
+            </div>
+        </div>
 
-        .feature-item a {
-            color: #007BFF;
-            text-decoration: none;
-        }
+        <div class="d-flex gap-1 justify-content-center">
+            <div class="flex-1">
+                <div class="d-flex gap-2em flex-column">
+                    <div class="text-detail d-flex flex-column w-100">
+                        <div class="d-flex gap-2em mb-3 align-items-center">
 
-    .cta {
-        text-align: center;
-        padding: 20px;
-        background: #92e08e;
-        color: white;
-    }
+                            <div class="icon-detail ">
+                                <div class="bg-icon color-1-bg">
+                                    <img src="/assets/images/Vector (5).png" alt="">
+                                </div>
+                            </div>
+                            <div class="head-text color-1">
+                                Ngôi nhà của yêu thương
+                            </div>
+                        </div>
 
-        .cta button {
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+                        <div class=" p-l">
+                            <p class="">
+                                Chế độ dinh dưỡng, công tác chăm sóc và yếu tố an toàn là ba tiêu chí hàng đầu làm
+                                nên uy tín và sự tin cậy của trường Mầm Non TT. Tâm huyết cùng với trình độ chuyên
+                                môn cao của đội ngũ nhân viên chính là “giá trị cốt lõi” mà nhà trường luôn chú
+                                trọng đầu tư phát triển.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-detail d-flex flex-column w-100">
+                        <div class="d-flex gap-2em mb-3 align-items-center">
 
-    .unique {
-        padding: 20px;
-        background: #fdf8f1;
-    }
+                            <div class="icon-detail ">
+                                <div class="bg-icon color-3-bg">
+                                    <img src="/assets/images/Vector (5).png" alt="">
+                                </div>
+                            </div>
+                            <div class="head-text color-3">
+                                Triết lý giáo dục hiện đại
+                            </div>
+                        </div>
 
-        .unique h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+                        <div class=" p-l">
+                            <p class="">
+                                Tiên phong trong đổi mới và cung cấp các giải pháp giáo dục hiện đại, theo sát xu
+                                hướng giáo dục quốc tế chính là kim chỉ nam trong hành trình giáo dục của trường Mầm
+                                Non TT.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-detail d-flex flex-column w-100">
+                        <div class="d-flex gap-2em mb-3 align-items-center">
 
-    .unique-item {
-        margin-bottom: 20px;
-    }
+                            <div class="icon-detail ">
+                                <div class="bg-icon color-4-bg">
+                                    <img src="/assets/images/Vector (5).png" alt="">
+                                </div>
+                            </div>
+                            <div class="head-text color-4">
+                                Môi trường sáng tạo
+                            </div>
+                        </div>
+
+                        <div class=" p-l">
+                            <p class="">
+                                Trường được thiết kế với không gian sinh hoạt ngoài trời, cùng nhiều lớp học và
+                                phòng chức năng được trang bị đầy đủ giáo cụ trực quan hiện đại, đảm bảo an toàn và
+                                tính thẩm mỹ cao.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 d-flex justify-content-center align-items-center">
+                <div class="img-mid">
+                    <img src="/assets/images/child.png" alt="">
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="d-flex gap-2em flex-column">
+
+                    <div class="text-detail d-flex flex-column w-100">
+                        <div class="d-flex gap-2em mb-3 align-items-center justify-content-between">
+                            <div class="head-text color-2">
+                                Hợp tác quốc tế
+                            </div>
+                            <div class="icon-detail ">
+                                <div class="bg-icon color-2-bg">
+                                    <img src="/assets/images/Vector (5).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-r">
+                            <p>
+                                Sự hợp tác giữa nhà trường và các đối tác giáo dục quốc tế như HighScope, MacMillan,
+                                Cambridge, Edmentum International… mang lại nhiều lợi ích và cam kết chất lượng cho
+                                lộ trình giáo dục bền vững của các thành viên trong cộng đồng.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-detail d-flex flex-column w-100">
+                        <div class="d-flex gap-2em mb-3 align-items-center justify-content-between">
+                            <div class="head-text color-5">
+                                Thấu hiểu nhưng khác biệt
+                            </div>
+                            <div class="icon-detail ">
+                                <div class="bg-icon color-5-bg">
+                                    <img src="/assets/images/Vector (5).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-r">
+                            <p>
+                                Hành trình trưởng thành của trẻ luôn phong phú và đòi hỏi nhiều sự thấu hiểu, hỗ trợ
+                                đặc biệt. Chương trình “Cùng con học nói” cùng chế độ làm quen theo nhu cầu sẽ giúp
+                                trẻ xóa bỏ rào cản, nhanh chóng hòa nhập với môi trường mới.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-detail d-flex flex-column w-100">
+                        <div class="d-flex gap-2em mb-3 align-items-center justify-content-between">
+                            <div class="head-text color-6">
+                                Kết nối lâu dài
+                            </div>
+                            <div class="icon-detail ">
+                                <div class="bg-icon color-6-bg">
+                                    <img src="/assets/images/Vector (5).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-r">
+                            <p>
+                                Giáo viên mang sứ mệnh kết nối bền vững, tư vấn và hỗ trợ phụ huynh xây dựng lộ
+                                trình học tập quốc tế phù hợp với năng lực của trẻ, đảm bảo chi phí hiệu quả sau khi
+                                hoàn thành chương trình Mầm Non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section id="image-child">
+    <div class="container-fluid">
+        <h3 class="h3-main">HOẠT ĐỘNG THƯỜNG NGÀY CỦA TRẺ</h3>
+        <div class="image-container row">
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="iamge-item">
+                    <img src="/assets/images/tro-choi-van-dong-ngoai-troi-cho-tre-mam-non-01.png" class="img-fluid"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="iamge-item">
+                    <img src="/assets/images/tro-choi-van-dong-ngoai-troi-cho-tre-mam-non-01.png" class="img-fluid"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="iamge-item">
+                    <img src="/assets/images/tro-choi-van-dong-ngoai-troi-cho-tre-mam-non-01.png" class="img-fluid"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="iamge-item">
+                    <img src="/assets/images/tro-choi-van-dong-ngoai-troi-cho-tre-mam-non-01.png" class="img-fluid"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-4  mb-4 d-flex justify-content-center">
+                <div class="iamge-item">
+                    <img src="/assets/images/tro-choi-van-dong-ngoai-troi-cho-tre-mam-non-01.png" class="img-fluid"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-4  mb-4 d-flex justify-content-center">
+                <div class="iamge-item">
+                    <img src="/assets/images/tro-choi-van-dong-ngoai-troi-cho-tre-mam-non-01.png" class="img-fluid"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-6 mb-2 d-flex justify-content-center">
+                <div class="iamge-item">
+                    <img src="/assets/images/image (1).png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 mb-2 d-flex justify-content-center">
+                <div class="iamge-item">
+                    <img src="/assets/images/image (1).png" class="img-fluid" alt="">
+                </div>
+            </div>
 
 
-   
 
-    .contact-list li {
-        list-style: none;
-        margin-bottom: 8px;
-        font-size: 14px;
-    }
+        </div>
 
-    /* Subscribe Form */
-    .subscribe-form {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 15px;
-    }
+    </div>
 
-        .subscribe-form input {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            flex: 1;
-            font-size: 14px;
-        }
+</section>
 
-        .subscribe-form button {
-            padding: 10px 20px;
-            background-color: #ffc107;
-            color: #343a40;
-            border: none;
-            border-radius: 5px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+<section id="video-section">
+    <div class="container-fluid">
+        <div class="bg-pure d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-md-3">
+                    <div class="video-item">
+                        <div class="header-text-video">
+                            <div>
+                                Bé rất là tự tin khi đối mặt với những thách thức
+                            </div>
+                            <div class="quote-img">
+                                <img src="/assets/images/fi-rr-quote-right.png" class="img-fluid" alt="">
+                            </div>
 
-            .subscribe-form button:hover {
-                background-color: #e0a800;
-            }
+                        </div>
+                        <div class="bg-video bg-item-1">
+                            <div class="video-yt">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/kAFzBv8YiCo?si=vWmXkKkvT2iyrCtP"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
 
-    /* Social Icons */
-    .social-icons {
-        display: flex;
-        margin-top: 15px;
-        gap: 10px;
-    }
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="video-item">
+                        <div class="header-text-video">
+                            <div>
+                                Bé rất là tự tin khi đối mặt với những thách thức
+                            </div>
+                            <div class="quote-img">
+                                <img src="/assets/images/fi-rr-quote-right.png" class="img-fluid" alt="">
+                            </div>
 
-        .social-icons li {
-            list-style: none;
-        }
+                        </div>
+                        <div class="bg-video bg-item-2">
+                            <div class="video-yt">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/kAFzBv8YiCo?si=vWmXkKkvT2iyrCtP"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
 
-        .social-icons a {
-            text-decoration: none;
-            color: #ffc107;
-            font-size: 20px;
-            transition: color 0.3s ease;
-        }
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="video-item">
+                        <div class="header-text-video">
+                            <div>
+                                Bé rất là tự tin khi đối mặt với những thách thức
+                            </div>
+                            <div class="quote-img">
+                                <img src="/assets/images/fi-rr-quote-right.png" class="img-fluid" alt="">
+                            </div>
 
-            .social-icons a:hover {
-                color: #e0a800;
-            }
+                        </div>
+                        <div class="bg-video bg-item-3">
+                            <div class="video-yt">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/kAFzBv8YiCo?si=vWmXkKkvT2iyrCtP"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
 
-   
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="video-item">
+                        <div class="header-text-video">
+                            <div>
+                                Bé rất là tự tin khi đối mặt với những thách thức
+                            </div>
+                            <div class="quote-img">
+                                <img src="/assets/images/fi-rr-quote-right.png" class="img-fluid" alt="">
+                            </div>
+
+                        </div>
+                        <div class="bg-video bg-item-4">
+                            <div class="video-yt">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/kAFzBv8YiCo?si=vWmXkKkvT2iyrCtP"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="line-vector">
+    <div class="container-vector">
+        <div class="line-vector-item"></div>
+        <div class="icon-vector">
+            <img src="/assets/images/Vector (6).png" class="img-fluid" alt="">
+        </div>
+        <div class="line-vector-item"></div>
+    </div>
 
 
-</style>
+</div>
+<section id="train-home">
+    <h3 class="h3-main">Các Chương Trình Đào Tạo </h3>
 
-<body>
-  
+    <div class="icon-with-line">
+        <div class="line align-items-end">
+            <div class="line-he line-top"></div>
+            <div class="line-he line-bottom"></div>
 
+        </div>
+        <div>
+            <img src="/assets/images/fi-rr-rocket.png" class="img-fluid" alt="">
+        </div>
+        <div class="line">
+            <div class="line-he line-top"></div>
+            <div class="line-he line-bottom"></div>
 
-
-    <section class="hero" id="home">
-        <img src="~/images/introduce.png" alt="Hình ảnh giới thiệu" />
-        <div class="hero-text">
-            <h1>Giới Thiệu Về Trường</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="decription-text">
             <p>
-                Trường Mầm Non Song Ngữ TT ra đời với sứ mệnh nuôi dưỡng và phát triển tối đa tiềm năng sáng tạo của từng em nhỏ, khai phóng những khả năng đặc biệt về mọi mặt. Chúng tôi tự hào đồng hành cùng Quý phụ huynh trong hành trình mang đến một nền giáo dục chất lượng cao, đầy tính nhân văn cho những năm tháng đầu đời của trẻ. Với chúng tôi, mỗi đứa trẻ đều có thể tỏa sáng theo cách riêng của mình.
-
-                Dựa trên triết lý giáo dục Khai phóng (Liberal Arts), Thang tư duy Bloom (Bloom’s Taxonomy) và thuyết Đa trí tuệ (Theory of Multiple Intelligences), chương trình giảng dạy tại trường được thiết kế nhằm xây dựng nền tảng đạo đức vững chắc thông qua chương trình Giá trị sống – Kỹ năng sống (Living Values & Life Skills), kích thích tư duy sáng tạo (Creative Thinking) và cá nhân hóa giảng dạy theo năng lực riêng biệt của từng trẻ (Standards-based Curriculum). Chúng tôi cam kết mang đến những giờ học đầy thú vị, khơi dậy niềm đam mê học tập suốt đời cho các em, từ đó tạo nên những trải nghiệm học tập phong phú và đa dạng.
-
-                Chúng tôi tin tưởng rằng môi trường giáo dục tại Trường Mầm Non Song Ngữ TT sẽ mang đến cho con em Quý phụ huynh một không gian học tập an toàn, toàn diện và đầy cảm hứng, với những trải nghiệm tuổi thơ đáng nhớ. Tại đây, trẻ không chỉ học kiến thức mà còn học cách yêu thương, sẻ chia và tôn trọng lẫn nhau.
-
-                Mỗi đứa trẻ là một viên ngọc quý cần được mài giũa. Chúng tôi hy vọng sẽ nhận được sự tin tưởng và đồng hành từ Quý phụ huynh trong hành trình giúp trẻ tỏa sáng và trở thành những công dân tài năng, hữu ích cho xã hội mai sau. Chính sự gắn kết chặt chẽ giữa nhà trường và gia đình sẽ tạo nên nền tảng vững chắc cho tương lai của trẻ.
+                Với khát khao mang đến một nền giáo dục chất lượng cao và dễ dàng tiếp cận cho mọi trẻ em, trường
+                mầm
+                non TT tự hào ứng dụng phương pháp giáo dục HighScope, nổi bật với triết lý <strong>
+                    “Học tập chủ
+                    động – Active Learning”
+                </strong>. Phương pháp này không chỉ tập trung phát triển trí tuệ mà còn
+                bồi
+                dưỡng những kỹ
+                năng quan trọng, giúp các bé tự tin khám phá thế giới, sẵn sàng trở thành những công dân toàn cầu
+                trong kỷ nguyên số hóa.
+            </p>
+            <p>
+                Nhưng hành trình giáo dục của trường mầm non TT không chỉ dừng lại ở bậc Mầm non. Với chương trình
+                giáo dục tiên tiến EPath, chúng tôi mở ra cánh cửa cho các em tiếp cận nền tảng kiến thức quốc tế từ
+                bậc Tiểu học, trang bị các kỹ năng học thuật cần thiết ở bậc Trung học, và xa hơn nữa là hỗ trợ các
+                em hiện thực hóa giấc mơ du học. EPath không chỉ là một lộ trình học tập mà còn là kim chỉ nam, giúp
+                trẻ bước vào tương lai với tâm thế tự tin, bản lĩnh và đầy khát vọng.
+            </p>
+            <p>
+                Trường mầm non TT cam kết đồng hành cùng phụ huynh trong việc xây dựng một nền móng vững chắc cho
+                thế hệ tương lai, để các con không chỉ học hỏi mà còn tỏa sáng trên con đường phát triển của chính
+                mình.
             </p>
         </div>
-    </section>
-
-    <section class="features">
-        <div class="feature-item">
-            <h2>KINH NGHIỆM NHIỀU ĐẦY</h2>
-            <p>Trường đã thành lập vào năm 2020...</p>
-            <a href="#">Xem thêm</a>
+        <div class="banner-train">
+            <img src="/assets/images/image (2).png" class="img-fluid w-100" alt="">
         </div>
-        <div class="feature-item">
-            <h2>HOẠT ĐỘNG HỌC TẬP</h2>
-            <p>Được thiết kế theo các tiêu chuẩn quốc tế...</p>
-            <a href="#">Xem thêm</a>
+    </div>
+</section>
+<section id="parents-home">
+    <h3 class="h3-main">Góc Phụ Huynh </h3>
+
+    <div class="icon-with-line">
+        <div class="line align-items-end">
+            <div class="line-he line-top"></div>
+            <div class="line-he line-bottom"></div>
+
         </div>
-        <div class="feature-item">
-            <h2>CẬP NHẬT KỊP XU HƯỚNG</h2>
-            <p>Chương trình giáo dục hiện đại...</p>
-            <a href="#">Xem thêm</a>
+        <div>
+            <img src="/assets/images/fi-rr-user.png" class="img-fluid" alt="">
         </div>
-    </section>
+        <div class="line">
+            <div class="line-he line-top"></div>
+            <div class="line-he line-bottom"></div>
 
-    <section class="cta">
-        <h2>THÔNG BÁO TRƯỜNG MẦM NON</h2>
-        <p>Trường Mầm Non TT Tỏa Sáng...</p>
-        <button>Tìm hiểu</button>
-    </section>
-
-    <section class="unique">
-        <h2>Trường Mầm Non TT Và Những Điều Khác Biệt</h2>
-        <div class="unique-item">
-            <h3>Ngôi nhà của yêu thương</h3>
-            <p>Môi trường thân thiện...</p>
         </div>
-        <div class="unique-item">
-            <h3>Hợp tác quốc tế</h3>
-            <p>Chương trình giảng dạy...</p>
+    </div>
+    <div class="container-fluid">
+        <div class="parents-item">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-12">
+                    <div class="news-feed d-flex gap-news">
+                        <div class="img-news">
+                            <img src="/assets/images/image (3).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="items-news d-flex flex-column justify-content-around">
+                            <div class="title-news">
+                                Chuẩn bị cho trẻ vào lớp 1 - Giải tỏa nỗi lo của ba mẹ
+                            </div>
+                            <div class="short-news-decription">
+                                Chuyển từ Mầm non vào lớp 1, trẻ sẽ đối diện với bao...
+                            </div>
+                            <a class="btn-next" href="#">
+                                Đọc thêm
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15"
+                                         fill="none">
+                                        <path d="M1.12006 15C0.897609 14.9991 0.680431 14.9354 0.495987 14.8169C0.311542 14.6985 0.168114 14.5306 0.0838401 14.3345C-0.000434294 14.1384 -0.0217704 13.9229 0.022529 13.7153C0.0668285 13.5076 0.174774 13.3172 0.332717 13.1679L6.28277 7.50042L0.332717 1.83289C0.227293 1.73329 0.143616 1.61479 0.0865132 1.48424C0.0294099 1.35368 1.05091e-05 1.21365 1.05091e-05 1.07222C1.05091e-05 0.930783 0.0294099 0.790749 0.0865132 0.660193C0.143616 0.529637 0.227293 0.411143 0.332717 0.311545C0.543457 0.112002 0.828533 0 1.12568 0C1.42283 0 1.70791 0.112002 1.91865 0.311545L8.66729 6.73975C8.77272 6.83934 8.85639 6.95784 8.9135 7.08839C8.9706 7.21895 9 7.35898 9 7.50042C9 7.64185 8.9706 7.78188 8.9135 7.91244C8.85639 8.04299 8.77272 8.16149 8.66729 8.26109L1.91865 14.6893C1.81355 14.7886 1.68891 14.8671 1.55187 14.9205C1.41483 14.9738 1.26809 15.0008 1.12006 15Z"
+                                              fill="#0E0D0D" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15"
+                                         fill="none">
+                                        <path d="M1.12006 15C0.897609 14.9991 0.680431 14.9354 0.495987 14.8169C0.311542 14.6985 0.168114 14.5306 0.0838401 14.3345C-0.000434297 14.1384 -0.0217704 13.9229 0.022529 13.7153C0.0668285 13.5076 0.174774 13.3172 0.332717 13.1679L6.28277 7.50042L0.332717 1.83289C0.227294 1.73329 0.143616 1.61479 0.0865132 1.48424C0.0294099 1.35368 1.05089e-05 1.21365 1.05089e-05 1.07222C1.05089e-05 0.930783 0.0294099 0.790749 0.0865132 0.660193C0.143616 0.529637 0.227294 0.411143 0.332717 0.311545C0.543457 0.112002 0.828533 0 1.12568 0C1.42283 0 1.70791 0.112002 1.91865 0.311545L8.66729 6.73975C8.77272 6.83934 8.85639 6.95784 8.9135 7.08839C8.9706 7.21895 9 7.35898 9 7.50042C9 7.64185 8.9706 7.78188 8.9135 7.91244C8.85639 8.04299 8.77272 8.16149 8.66729 8.26109L1.91865 14.6893C1.81355 14.7886 1.68891 14.8671 1.55187 14.9205C1.41483 14.9738 1.26809 15.0008 1.12006 15Z"
+                                              fill="#0E0D0D" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-12">
+                    <div class="news-feed d-flex gap-news">
+                        <div class="img-news">
+                            <img src="/assets/images/image (3).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="items-news d-flex flex-column justify-content-around">
+                            <div class="title-news">
+                                Chuẩn bị cho trẻ vào lớp 1 - Giải tỏa nỗi lo của ba mẹ
+                            </div>
+                            <div class="short-news-decription">
+                                Chuyển từ Mầm non vào lớp 1, trẻ sẽ đối diện với bao...
+                            </div>
+                            <a class="btn-next" href="#">
+                                Đọc thêm
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15"
+                                         fill="none">
+                                        <path d="M1.12006 15C0.897609 14.9991 0.680431 14.9354 0.495987 14.8169C0.311542 14.6985 0.168114 14.5306 0.0838401 14.3345C-0.000434294 14.1384 -0.0217704 13.9229 0.022529 13.7153C0.0668285 13.5076 0.174774 13.3172 0.332717 13.1679L6.28277 7.50042L0.332717 1.83289C0.227293 1.73329 0.143616 1.61479 0.0865132 1.48424C0.0294099 1.35368 1.05091e-05 1.21365 1.05091e-05 1.07222C1.05091e-05 0.930783 0.0294099 0.790749 0.0865132 0.660193C0.143616 0.529637 0.227293 0.411143 0.332717 0.311545C0.543457 0.112002 0.828533 0 1.12568 0C1.42283 0 1.70791 0.112002 1.91865 0.311545L8.66729 6.73975C8.77272 6.83934 8.85639 6.95784 8.9135 7.08839C8.9706 7.21895 9 7.35898 9 7.50042C9 7.64185 8.9706 7.78188 8.9135 7.91244C8.85639 8.04299 8.77272 8.16149 8.66729 8.26109L1.91865 14.6893C1.81355 14.7886 1.68891 14.8671 1.55187 14.9205C1.41483 14.9738 1.26809 15.0008 1.12006 15Z"
+                                              fill="#0E0D0D" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15"
+                                         fill="none">
+                                        <path d="M1.12006 15C0.897609 14.9991 0.680431 14.9354 0.495987 14.8169C0.311542 14.6985 0.168114 14.5306 0.0838401 14.3345C-0.000434297 14.1384 -0.0217704 13.9229 0.022529 13.7153C0.0668285 13.5076 0.174774 13.3172 0.332717 13.1679L6.28277 7.50042L0.332717 1.83289C0.227294 1.73329 0.143616 1.61479 0.0865132 1.48424C0.0294099 1.35368 1.05089e-05 1.21365 1.05089e-05 1.07222C1.05089e-05 0.930783 0.0294099 0.790749 0.0865132 0.660193C0.143616 0.529637 0.227294 0.411143 0.332717 0.311545C0.543457 0.112002 0.828533 0 1.12568 0C1.42283 0 1.70791 0.112002 1.91865 0.311545L8.66729 6.73975C8.77272 6.83934 8.85639 6.95784 8.9135 7.08839C8.9706 7.21895 9 7.35898 9 7.50042C9 7.64185 8.9706 7.78188 8.9135 7.91244C8.85639 8.04299 8.77272 8.16149 8.66729 8.26109L1.91865 14.6893C1.81355 14.7886 1.68891 14.8671 1.55187 14.9205C1.41483 14.9738 1.26809 15.0008 1.12006 15Z"
+                                              fill="#0E0D0D" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="news-feed d-flex gap-news">
+                        <div class="img-news">
+                            <img src="/assets/images/image (3).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="items-news d-flex flex-column justify-content-around">
+                            <div class="title-news">
+                                Chuẩn bị cho trẻ vào lớp 1 - Giải tỏa nỗi lo của ba mẹ
+                            </div>
+                            <div class="short-news-decription">
+                                Chuyển từ Mầm non vào lớp 1, trẻ sẽ đối diện với bao...
+                            </div>
+                            <a class="btn-next" href="#">
+                                Đọc thêm
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15"
+                                         fill="none">
+                                        <path d="M1.12006 15C0.897609 14.9991 0.680431 14.9354 0.495987 14.8169C0.311542 14.6985 0.168114 14.5306 0.0838401 14.3345C-0.000434294 14.1384 -0.0217704 13.9229 0.022529 13.7153C0.0668285 13.5076 0.174774 13.3172 0.332717 13.1679L6.28277 7.50042L0.332717 1.83289C0.227293 1.73329 0.143616 1.61479 0.0865132 1.48424C0.0294099 1.35368 1.05091e-05 1.21365 1.05091e-05 1.07222C1.05091e-05 0.930783 0.0294099 0.790749 0.0865132 0.660193C0.143616 0.529637 0.227293 0.411143 0.332717 0.311545C0.543457 0.112002 0.828533 0 1.12568 0C1.42283 0 1.70791 0.112002 1.91865 0.311545L8.66729 6.73975C8.77272 6.83934 8.85639 6.95784 8.9135 7.08839C8.9706 7.21895 9 7.35898 9 7.50042C9 7.64185 8.9706 7.78188 8.9135 7.91244C8.85639 8.04299 8.77272 8.16149 8.66729 8.26109L1.91865 14.6893C1.81355 14.7886 1.68891 14.8671 1.55187 14.9205C1.41483 14.9738 1.26809 15.0008 1.12006 15Z"
+                                              fill="#0E0D0D" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15"
+                                         fill="none">
+                                        <path d="M1.12006 15C0.897609 14.9991 0.680431 14.9354 0.495987 14.8169C0.311542 14.6985 0.168114 14.5306 0.0838401 14.3345C-0.000434297 14.1384 -0.0217704 13.9229 0.022529 13.7153C0.0668285 13.5076 0.174774 13.3172 0.332717 13.1679L6.28277 7.50042L0.332717 1.83289C0.227294 1.73329 0.143616 1.61479 0.0865132 1.48424C0.0294099 1.35368 1.05089e-05 1.21365 1.05089e-05 1.07222C1.05089e-05 0.930783 0.0294099 0.790749 0.0865132 0.660193C0.143616 0.529637 0.227294 0.411143 0.332717 0.311545C0.543457 0.112002 0.828533 0 1.12568 0C1.42283 0 1.70791 0.112002 1.91865 0.311545L8.66729 6.73975C8.77272 6.83934 8.85639 6.95784 8.9135 7.08839C8.9706 7.21895 9 7.35898 9 7.50042C9 7.64185 8.9706 7.78188 8.9135 7.91244C8.85639 8.04299 8.77272 8.16149 8.66729 8.26109L1.91865 14.6893C1.81355 14.7886 1.68891 14.8671 1.55187 14.9205C1.41483 14.9738 1.26809 15.0008 1.12006 15Z"
+                                              fill="#0E0D0D" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="news-feed d-flex gap-news">
+                        <div class="img-news">
+                            <img src="/assets/images/image (3).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="items-news d-flex flex-column justify-content-around">
+                            <div class="title-news">
+                                Chuẩn bị cho trẻ vào lớp 1 - Giải tỏa nỗi lo của ba mẹ
+                            </div>
+                            <div class="short-news-decription">
+                                Chuyển từ Mầm non vào lớp 1, trẻ sẽ đối diện với bao...
+                            </div>
+                            <a class="btn-next" href="#">
+                                Đọc thêm
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15"
+                                         fill="none">
+                                        <path d="M1.12006 15C0.897609 14.9991 0.680431 14.9354 0.495987 14.8169C0.311542 14.6985 0.168114 14.5306 0.0838401 14.3345C-0.000434294 14.1384 -0.0217704 13.9229 0.022529 13.7153C0.0668285 13.5076 0.174774 13.3172 0.332717 13.1679L6.28277 7.50042L0.332717 1.83289C0.227293 1.73329 0.143616 1.61479 0.0865132 1.48424C0.0294099 1.35368 1.05091e-05 1.21365 1.05091e-05 1.07222C1.05091e-05 0.930783 0.0294099 0.790749 0.0865132 0.660193C0.143616 0.529637 0.227293 0.411143 0.332717 0.311545C0.543457 0.112002 0.828533 0 1.12568 0C1.42283 0 1.70791 0.112002 1.91865 0.311545L8.66729 6.73975C8.77272 6.83934 8.85639 6.95784 8.9135 7.08839C8.9706 7.21895 9 7.35898 9 7.50042C9 7.64185 8.9706 7.78188 8.9135 7.91244C8.85639 8.04299 8.77272 8.16149 8.66729 8.26109L1.91865 14.6893C1.81355 14.7886 1.68891 14.8671 1.55187 14.9205C1.41483 14.9738 1.26809 15.0008 1.12006 15Z"
+                                              fill="#0E0D0D" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15"
+                                         fill="none">
+                                        <path d="M1.12006 15C0.897609 14.9991 0.680431 14.9354 0.495987 14.8169C0.311542 14.6985 0.168114 14.5306 0.0838401 14.3345C-0.000434297 14.1384 -0.0217704 13.9229 0.022529 13.7153C0.0668285 13.5076 0.174774 13.3172 0.332717 13.1679L6.28277 7.50042L0.332717 1.83289C0.227294 1.73329 0.143616 1.61479 0.0865132 1.48424C0.0294099 1.35368 1.05089e-05 1.21365 1.05089e-05 1.07222C1.05089e-05 0.930783 0.0294099 0.790749 0.0865132 0.660193C0.143616 0.529637 0.227294 0.411143 0.332717 0.311545C0.543457 0.112002 0.828533 0 1.12568 0C1.42283 0 1.70791 0.112002 1.91865 0.311545L8.66729 6.73975C8.77272 6.83934 8.85639 6.95784 8.9135 7.08839C8.9706 7.21895 9 7.35898 9 7.50042C9 7.64185 8.9706 7.78188 8.9135 7.91244C8.85639 8.04299 8.77272 8.16149 8.66729 8.26109L1.91865 14.6893C1.81355 14.7886 1.68891 14.8671 1.55187 14.9205C1.41483 14.9738 1.26809 15.0008 1.12006 15Z"
+                                              fill="#0E0D0D" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
 
-    
+    </div>
+</section>
+
+<div class="line-bg"></div>
 
 
-
-</body>
-</html>
-
-            <script>
-    // Thay đổi màu khi hover vào menu
-    document.querySelectorAll(".navbar ul li").forEach(item => {
-        item.addEventListener("mouseover", () => {
-            item.style.color = "#007bff"; // Thay đổi màu khi hover
-        });
-
-        item.addEventListener("mouseout", () => {
-            item.style.color = "#333"; // Trở về màu gốc
-        });
-    });
-
-    // Cuộn mượt mà khi nhấp vào liên kết trong menu
-    document.querySelectorAll(".navbar a").forEach(link => {
-        link.addEventListener("click", e => {
-            e.preventDefault();
-            const targetId = link.getAttribute("href").replace("#", "");
-            const target = document.getElementById(targetId);
-
-            if (target) {
-                window.scrollTo({
-                    top: target.offsetTop,
-                    behavior: "smooth"
-                });
-            }
-        });
-    });
-
-    // Hiệu ứng tải động (nếu cần)
-    window.addEventListener("load", () => {
-        const heroText = document.querySelector(".hero-text");
-        if (heroText) {
-            heroText.style.opacity = 1;
-            heroText.style.transform = "translateY(0)";
-        }
-    });
-    document.querySelectorAll(".nav-link").forEach(link => {
-        link.addEventListener("mouseover", () => {
-            link.style.color = "#007bff";
-        });
-        link.addEventListener("mouseout", () => {
-            link.style.color = "#333";
-        });
-    });
-
-            </script>
+<section id="form-contact">
+    <div class="container">
+        <div class="form-container">
+            <h3>ĐĂNG KÝ THĂM QUAN</h3>
+            <form class="form-main">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Họ và Tên *">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <input type="number" class="form-control" placeholder="Điện thoại *">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="cs" class="text-bold">Chọn cơ sở</label>
+                            <select name="cs" id="cs" class="form-control">
+                                <option value="Cơ sở 1">Cơ sở 1</option>
+                                <option value="Cơ sở 1">Cơ sở 1</option>
+                                <option value="Cơ sở 1">Cơ sở 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <textarea name="des" id="des" placeholder="Nội dung" rows="5"
+                                      class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-form">
+                    <button type="submit" class="btn btn-success">GỬI ĐI</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
