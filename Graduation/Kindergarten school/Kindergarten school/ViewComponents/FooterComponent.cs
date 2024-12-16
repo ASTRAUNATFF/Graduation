@@ -7,7 +7,7 @@ namespace Kindergarten_school.ViewComponents
     {
 
         public IViewComponentResult Invoke()
-        {
+        { 
             return View();
         }
     }
