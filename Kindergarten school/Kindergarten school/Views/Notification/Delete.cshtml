@@ -1,0 +1,17 @@
+﻿@model Kindergarten_school.Models.NotificationModel
+
+<h1>Xóa thông báo</h1>
+
+<p>Bạn có chắc chắn muốn xóa thông báo này?</p>
+
+<div>
+    <h4>@Model.Title</h4>
+    <p>@Model.Message</p>
+    <p><strong>Ngày tạo:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

@@ -1,0 +1,9 @@
+﻿@model Kindergarten_school.Models.ClassModel
+
+<h2>Chi tiết lớp học</h2>
+<div>
+    <p><strong>Tên lớp:</strong> @Model.ClassName</p>
+    <p><strong>Số học sinh tối đa:</strong> @Model.MaxStudent</p>
+    <p><strong>Thời khóa biểu:</strong> @Model.Schedule.ToShortDateString()</p>
+</div>
+<a asp-action="Index" class="btn btn-primary">Quay lại</a>

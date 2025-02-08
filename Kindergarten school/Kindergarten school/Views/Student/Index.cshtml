@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Kindergarten_school.Models.StudentModel>
+
+@{
+    ViewData["Title"] = "Danh sách học sinh";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Thêm học sinh</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Họ</th>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Lớp</th>
+            <th>Địa chỉ</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.Age</td>
+                <td>@student.ClassId</td>
+                <td>@student.Address</td>
+                <td>
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@student.Id">Chi tiết</a>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@student.Id">Sửa</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@student.Id">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

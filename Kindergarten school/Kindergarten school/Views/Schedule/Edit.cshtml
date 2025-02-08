@@ -1,0 +1,62 @@
+﻿@model Kindergarten_school.Models.ScheduleModel
+
+<h1 class="text-center text-primary">Sửa Thời Khóa Biểu</h1>
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Lớp</label>
+                <input asp-for="ClassId" class="form-control" placeholder="Nhập mã lớp" />
+                <span asp-validation-for="ClassId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Ngày trong tuần</label>
+                <select asp-for="DayOfWeek" class="form-select">
+                    <option value="Monday">Thứ Hai</option>
+                    <option value="Tuesday">Thứ Ba</option>
+                    <option value="Wednesday">Thứ Tư</option>
+                    <option value="Thursday">Thứ Năm</option>
+                    <option value="Friday">Thứ Sáu</option>
+                </select>
+                <span asp-validation-for="DayOfWeek" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold">Giờ bắt đầu</label>
+                    <input asp-for="StartTime" type="time" class="form-control" />
+                    <span asp-validation-for="StartTime" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold">Giờ kết thúc</label>
+                    <input asp-for="EndTime" type="time" class="form-control" />
+                    <span asp-validation-for="EndTime" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Subject">Môn học</label>
+                <select asp-for="Subject" class="form-control" asp-items="ViewBag.Subjects">
+                    <option value="">-- Chọn môn học --</option>
+                </select>
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Mã giáo viên</label>
+                <input asp-for="TeacherId" class="form-control" placeholder="Nhập mã giáo viên" />
+                <span asp-validation-for="TeacherId" class="text-danger"></span>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-4">Lưu</button>
+                <a asp-action="Index" class="btn btn-secondary px-4">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>

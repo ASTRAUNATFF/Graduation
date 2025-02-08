@@ -1,0 +1,11 @@
+﻿@model Kindergarten_school.Models.NotificationModel
+
+<h1>Chi tiết thông báo</h1>
+
+<div>
+    <h4>@Model.Title</h4>
+    <p>@Model.Message</p>
+    <p><strong>Ngày tạo:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Quay lại</a>

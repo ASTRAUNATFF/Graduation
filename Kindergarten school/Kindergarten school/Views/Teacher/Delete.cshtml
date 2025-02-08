@@ -1,0 +1,17 @@
+﻿@model Kindergarten_school.Models.TeacherModel
+
+<h2>Xóa giáo viên</h2>
+<p>Bạn có chắc muốn xóa thông tin giáo viên này không?</p>
+
+<div>
+    <h3>@Model.FirstName @Model.LastName</h3>
+    <p>Môn học: @Model.Subject</p>
+    <p>Số điện thoại: @Model.Phone</p>
+    <p>Ngày vào làm: @Model.HireDate</p>
+    <p>Địa chỉ: @Model.Address</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

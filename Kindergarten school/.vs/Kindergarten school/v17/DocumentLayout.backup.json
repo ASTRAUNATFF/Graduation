@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\controllers\\attendancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\controllers\\attendancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\views\\transactions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\views\\transactions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\models\\transactionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\models\\transactionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\models\\teachermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\models\\teachermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\views\\fee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\views\\fee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\views\\schedule\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\views\\schedule\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\views\\schedule\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\views\\schedule\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\graduation\\kindergarten school\\kindergarten school\\models\\schedulemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\models\\schedulemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Kindergarten school\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T03:32:53.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AttendancesController.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\AttendancesController.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Controllers\\AttendancesController.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\AttendancesController.cs",
+              "RelativeToolTip": "Kindergarten school\\Controllers\\AttendancesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T03:32:49.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassesController.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\ClassesController.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Controllers\\ClassesController.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\ClassesController.cs",
+              "RelativeToolTip": "Kindergarten school\\Controllers\\ClassesController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T03:32:45.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Transactions\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kindergarten school\\Views\\Transactions\\Index.cshtml",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Transactions\\Index.cshtml",
+              "RelativeToolTip": "Kindergarten school\\Views\\Transactions\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAlwBUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T02:55:25.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeacherModel.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Models\\TeacherModel.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Models\\TeacherModel.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Models\\TeacherModel.cs",
+              "RelativeToolTip": "Kindergarten school\\Models\\TeacherModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T02:21:42.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionModel.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Models\\TransactionModel.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Models\\TransactionModel.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Models\\TransactionModel.cs",
+              "RelativeToolTip": "Kindergarten school\\Models\\TransactionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T02:21:37.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Controllers\\TransactionsController.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "Kindergarten school\\Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAASwBYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T02:21:06.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Program.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Program.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Program.cs",
+              "RelativeToolTip": "Kindergarten school\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAnwBcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T02:19:27.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FeesController.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\FeesController.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Controllers\\FeesController.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\FeesController.cs",
+              "RelativeToolTip": "Kindergarten school\\Controllers\\FeesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T03:46:33.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Fee\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kindergarten school\\Views\\Fee\\Index.cshtml",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Fee\\Index.cshtml",
+              "RelativeToolTip": "Kindergarten school\\Views\\Fee\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-03T03:45:03.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Schedule\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kindergarten school\\Views\\Schedule\\Index.cshtml",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Schedule\\Index.cshtml",
+              "RelativeToolTip": "Kindergarten school\\Views\\Schedule\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-03T03:42:59.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Schedule\\Create.cshtml",
+              "RelativeDocumentMoniker": "Kindergarten school\\Views\\Schedule\\Create.cshtml",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Schedule\\Create.cshtml",
+              "RelativeToolTip": "Kindergarten school\\Views\\Schedule\\Create.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-03T03:35:43.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Schedule\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Kindergarten school\\Views\\Schedule\\Edit.cshtml",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Views\\Schedule\\Edit.cshtml",
+              "RelativeToolTip": "Kindergarten school\\Views\\Schedule\\Edit.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T14:33:23.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ScheduleModel.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Models\\ScheduleModel.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Models\\ScheduleModel.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Models\\ScheduleModel.cs",
+              "RelativeToolTip": "Kindergarten school\\Models\\ScheduleModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T15:34:03.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ScheduleController.cs",
+              "DocumentMoniker": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\ScheduleController.cs",
+              "RelativeDocumentMoniker": "Kindergarten school\\Controllers\\ScheduleController.cs",
+              "ToolTip": "D:\\Education\\MVC\\Graduation\\Kindergarten school\\Kindergarten school\\Controllers\\ScheduleController.cs",
+              "RelativeToolTip": "Kindergarten school\\Controllers\\ScheduleController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwDUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T14:12:07.515Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

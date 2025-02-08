@@ -1,0 +1,29 @@
+﻿@model List<Kindergarten_school.Models.TransactionModel>
+
+@{
+    ViewData["Title"] = "Danh sách giao dịch";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã học sinh</th>
+            <th>Số tiền</th>
+            <th>Loại giao dịch</th>
+            <th>Ngày giao dịch</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in Model)
+        {
+            <tr>
+                <td>@transaction.studentID</td>
+                <td>@transaction.amount.ToString("N0") VND</td>
+                <td>@transaction.typeoftrans</td>
+                <td>@transaction.transactiondate.ToString("dd/MM/yyyy HH:mm")</td>
+            </tr>
+        }
+    </tbody>
+</table>

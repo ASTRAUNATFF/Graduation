@@ -1,0 +1,23 @@
+﻿@model Kindergarten_school.Models.ClassModel
+
+<h2>Thêm lớp học</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label for="ClassName">Tên lớp</label>
+        <input type="text" class="form-control" id="ClassName" name="ClassName" required />
+    </div>
+    <div class="form-group">
+        <label for="MaxStudent">Số lượng tối đa</label>
+        <input type="number" class="form-control" id="MaxStudent" name="MaxStudent" required />
+    </div>
+    <div class="form-group">
+        <label for="Schedule">Thời khóa biểu</label>
+        <input type="date" class="form-control" id="Schedule" name="Schedule" />
+    </div>
+    <div class="form-group">
+        <label for="ClassID">ID lớp học</label>
+        <input type="number" class="form-control" id="ClassID" name="ClassID" required />
+    </div>
+    <button type="submit" class="btn btn-success">Lưu</button>
+</form>

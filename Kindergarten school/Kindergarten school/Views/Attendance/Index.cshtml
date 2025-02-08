@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Kindergarten_school.Models.Attendance>
+
+<h2>Danh sách Điểm Danh</h2>
+<a asp-action="Create" class="btn btn-primary">Thêm Điểm Danh</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ngày</th>
+            <th>Trạng Thái</th>
+            <th>Mã Học Sinh</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var attendance in Model)
+        {
+            <tr>
+                <td>@attendance.Date.ToString("dd/MM/yyyy")</td>
+                <td>@attendance.Status</td>
+                <td>@attendance.StudentID</td>
+            </tr>
+        }
+    </tbody>
+</table>

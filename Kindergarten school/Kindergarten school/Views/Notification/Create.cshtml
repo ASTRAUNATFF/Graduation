@@ -1,0 +1,20 @@
+﻿@model Kindergarten_school.Models.NotificationModel
+
+<h1>Thêm thông báo mới</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Title">Tiêu đề</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Message">Nội dung</label>
+        <textarea asp-for="Message" class="form-control"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

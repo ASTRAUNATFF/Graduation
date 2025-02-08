@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Kindergarten_school.Models.NotificationModel>
+
+<h1>Danh sách thông báo</h1>
+
+<a asp-action="Create" class="btn btn-primary">Thêm thông báo mới</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tiêu đề</th>
+            <th>Nội dung</th>
+            <th>Ngày tạo</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var notification in Model)
+        {
+            <tr>
+                <td>@notification.Title</td>
+                <td>@notification.Message</td>
+                <td>@notification.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@notification.Id" class="btn btn-info">Chi tiết</a>
+                    <a asp-action="Delete" asp-route-id="@notification.Id" class="btn btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

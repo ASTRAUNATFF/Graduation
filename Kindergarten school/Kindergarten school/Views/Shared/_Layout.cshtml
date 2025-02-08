@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Kindergarten_school</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Kindergarten_school.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+ <style>
+    .navbar {
+        width: 100%; /* Đảm bảo thanh navbar dài toàn bộ chiều ngang */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+    }
+
+    .navbar-brand img {
+        height: 50px; /* Đặt chiều cao logo */
+    }
+
+    .nav-link {
+        padding: 8px 15px;
+        transition: color 0.3s ease;
+    }
+
+        .nav-link:hover {
+            color: #007bff; /* Màu khi hover */
+        }
+    /* Footer Container */
+    .footer-container {
+        background-color: #343a40;
+        color: #f8f9fa;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #495057;
+        padding-bottom: 20px;
+    }
+
+    .footer-col {
+        flex: 1;
+        margin: 0 15px;
+        min-width: 250px;
+    }
+
+        .footer-col h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ffc107;
+            text-transform: uppercase;
+        }
+
+        .footer-col p {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+    .contact-list li {
+        list-style: none;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    /* Subscribe Form */
+    .subscribe-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+        .subscribe-form input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #ffc107;
+            color: #343a40;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .subscribe-form button:hover {
+                background-color: #e0a800;
+            }
+
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+        .social-icons li {
+            list-style: none;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #ffc107;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+            .social-icons a:hover {
+                color: #e0a800;
+            }
+
+    /* Footer Bottom Row */
+    .footer-row:last-child {
+        border: none;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .footer-row h4 {
+        font-size: 16px;
+        color: #ffc107;
+        margin-bottom: 10px;
+    }
+
+ </style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <!-- Thay đổi từ "container" sang "container-fluid" -->
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" alt="Logo Trường Mầm Non" style="height: 50px; margin-right: 10px;" />
+                    Kindergarten School
+                </a>
+
+                <!-- Toggler Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#programs">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#contact">Contact</a>
+                        </li>
+                        <!-- Hiển thị thông tin người dùng đã đăng nhập -->
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <span class="nav-link text-dark">Chào <strong>@User.Identity.Name</strong></span>
+                            </li>
+                            <li class="nav-item">
+                                <form asp-action="Logout" asp-controller="Account" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-link nav-link text-danger">Đăng xuất</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <form asp-action="Login" asp-controller="Account" method="get" class="d-inline">
+                                    <button type="submit" class="btn btn-success">Đăng Nhập</button>
+                                </form>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Biểu tượng chuông thông báo -->
+        <div style="position: relative; display: inline-block;">
+            <button id="notification-bell" style="background: none; border: none; cursor: pointer;">
+                <i class="fa fa-bell" style="font-size: 24px; color: black;"></i>
+                <span id="notification-count"
+                      style="display: none; position: absolute; top: 0; right: 0; background: red; color: white;
+                     border-radius: 50%; width: 20px; height: 20px; text-align: center; font-size: 12px;">
+                </span>
+            </button>
+            <div id="notification-list"
+                 style="display: none; position: absolute; top: 30px; right: 0; width: 300px; background: white;
+                border: 1px solid #ddd; box-shadow: 0px 4px 6px rgba(0,0,0,0.1);">
+                <ul style="list-style: none; margin: 0; padding: 10px;">
+                    <!-- Thông báo sẽ được thêm tại đây -->
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <!-- Giới thiệu -->
+                <div class="footer-col">
+                    <h3>Giới thiệu</h3>
+                    <p>Hân hoan chào đón Quý phụ huynh và xin được chúc mừng con em của Quý vị đã trở thành công dân của Trường Mầm Non Song Ngữ Trẻ Sáng Tạo...</p>
+                </div>
+
+                <!-- Liên hệ -->
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <p>HỆ THỐNG TRƯỜNG MẦM NON SONG NGỮ TRẺ SÁNG TẠO</p>
+                    <ul class="contact-list">
+                        <li><strong>Hotline:</strong> *****...</li>
+                        <li><strong>Email:</strong> mamnonTT@gmail.com</li>
+                        <li><strong>Website:</strong> mamnonTT.edu.vn</li>
+                    </ul>
+                </div>
+
+                <!-- Đăng ký nhận tin -->
+                <div class="footer-col">
+                    <h3>Đăng ký nhận tin</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cơ sở -->
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Cơ sở 1</h4>
+                    <p>Địa chỉ chi tiết tại đây...</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.9/signalr.min.js"></script>
+    <script>
+                const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/notificationHub")
+            .build();
+
+                        let unreadCount = 0; // Khởi tạo số lượng thông báo chưa đọc
+
+        // Nhận thông báo từ server
+        connection.on("ReceiveNotification", function (message) {
+            unreadCount++;  // Tăng số thông báo chưa đọc
+            updateNotificationBell();  // Cập nhật lại chuông
+
+            // Thêm thông báo vào danh sách
+            const notificationList = document.querySelector("#notification-list ul");
+            const notificationItem = document.createElement("li");
+            notificationItem.style.padding = "10px";
+            notificationItem.style.borderBottom = "1px solid #ddd";
+            notificationItem.textContent = message;
+            notificationList.prepend(notificationItem);
+        });
+
+        // Cập nhật số lượng thông báo chưa đọc
+        function updateNotificationBell() {
+            const countSpan = document.getElementById("notification-count");
+
+            // Kiểm tra nếu có thông báo chưa đọc
+            if (unreadCount > 0) {
+                countSpan.textContent = unreadCount;
+                countSpan.style.display = "block";  // Hiển thị chuông thông báo
+            } else {
+                countSpan.style.display = "none";  // Ẩn chuông khi không có thông báo chưa đọc
+            }
+        }
+
+        // Sự kiện nhấp chuông để mở danh sách thông báo
+        document.getElementById("notification-bell").addEventListener("click", function () {
+            const notificationList = document.getElementById("notification-list");
+            notificationList.style.display = notificationList.style.display === "block" ? "none" : "block";
+
+            // Khi danh sách được mở, reset số thông báo chưa đọc
+            unreadCount = 0;  // Chỉ reset khi người dùng nhấp vào chuông
+            updateNotificationBell();  // Cập nhật lại chuông sau khi reset số thông báo chưa đọc
+        });
+
+        // Bắt đầu kết nối SignalR
+        connection.start().catch(function (err) {
+            return console.error(err.toString());
+        });
+
+
+
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>!function (s, u, b, i, z) { var o, t, r, y; s[i] || (s._sbzaccid = z, s[i] = function () { s[i].q.push(arguments) }, s[i].q = [], s[i]("setAccount", z), r = ["widget.subiz.net", "storage.googleapis" + (t = ".com"), "app.sbz.workers.dev", i + "a" + (o = function (k, t) { var n = t <= 6 ? 5 : o(k, t - 1) + o(k, t - 3); return k !== t ? n : n.toString(32) })(20, 20) + t, i + "b" + o(30, 30) + t, i + "c" + o(40, 40) + t], (y = function (k) { var t, n; s._subiz_init_2094850928430 || r[k] && (t = u.createElement(b), n = u.getElementsByTagName(b)[0], t.async = 1, t.src = "https://" + r[k] + "/sbz/app.js?accid=" + z, n.parentNode.insertBefore(t, n), setTimeout(y, 2e3, k + 1)) })(0)) }(window, document, "script", "subiz", "acsedhptfinoydfmzwpv");</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Kindergarten_school.Models.ClassModel>
+
+<h2>Danh sách lớp học</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên lớp</th>
+            <th>Số lượng tối đa</th>
+            <th>Thời khóa biểu</th>
+            <th>ID lớp học</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ClassName</td>
+                <td>@item.MaxStudent</td>
+                <td>@item.Schedule.ToString("yyyy-MM-dd")</td>
+                <td>@item.ClassID</td>
+                <td>
+                    <a href="/Classes/Details/@item.Id">Xem</a> |
+                    <a href="/Classes/Edit/@item.Id">Sửa</a> |
+                    <a href="/Classes/Delete/@item.Id">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Classes/Create" class="btn btn-primary">Thêm lớp mới</a>

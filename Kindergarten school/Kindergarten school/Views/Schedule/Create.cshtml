@@ -1,0 +1,67 @@
+﻿@model Kindergarten_school.Models.ScheduleModel
+
+<h1 class="text-center text-primary mt-4">Thêm Thời Khóa Biểu</h1>
+
+<div class="card shadow p-4 mt-3">
+    <form asp-action="Create" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="ClassId" class="font-weight-bold">📚 Lớp</label>
+                    <input asp-for="ClassId" class="form-control" placeholder="Nhập mã lớp..." />
+                    <span asp-validation-for="ClassId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="DayOfWeek" class="font-weight-bold">📆 Ngày trong tuần</label>
+                    <select asp-for="DayOfWeek" class="form-control">
+                        <option value="">Chọn ngày</option>
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                    </select>
+                    <span asp-validation-for="DayOfWeek" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="StartTime" class="font-weight-bold">🕒 Giờ bắt đầu</label>
+                    <input asp-for="StartTime" type="time" class="form-control" />
+                    <span asp-validation-for="StartTime" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="EndTime" class="font-weight-bold">🕒 Giờ kết thúc</label>
+                    <input asp-for="EndTime" type="time" class="form-control" />
+                    <span asp-validation-for="EndTime" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="TeacherId" class="font-weight-bold">👨‍🏫 Mã giáo viên</label>
+            <input asp-for="TeacherId" class="form-control" placeholder="Nhập mã giáo viên..." />
+            <span asp-validation-for="TeacherId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Subject" class="font-weight-bold">📖 Chọn môn học</label>
+            <select asp-for="Subject" class="form-control" asp-items="@(new SelectList(ViewBag.Subjects))">
+                <option value="">Chọn môn học</option>
+            </select>
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+            <button type="submit" class="btn btn-success px-4">💾 Lưu</button>
+            <a asp-action="Index" class="btn btn-danger ml-3 px-4">❌ Hủy</a>
+        </div>
+    </form>
+</div>

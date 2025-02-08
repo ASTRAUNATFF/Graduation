@@ -1,0 +1,23 @@
+﻿@model Kindergarten_school.Models.Attendance
+
+<h2>Thêm Điểm Danh</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Date">Ngày</label>
+        <input type="date" class="form-control" id="Date" name="Date" required />
+    </div>
+    <div class="form-group">
+        <label for="Status">Trạng Thái</label>
+        <select class="form-control" id="Status" name="Status">
+            <option value="Có Mặt">Có Mặt</option>
+            <option value="Vắng">Vắng</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="StudentId">Mã Học Sinh</label>
+        <input type="number" class="form-control" id="StudentId" name="StudentId" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu</button>
+</form>
+

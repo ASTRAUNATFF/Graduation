@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Kindergarten_school.Models.ScheduleModel>
+
+<h1 class="text-center mb-4">📅 Danh Sách Thời Khóa Biểu</h1>
+
+<div class="d-flex justify-content-between mb-3">
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fas fa-plus"></i> Thêm mới
+    </a>
+</div>
+
+<div class="table-responsive shadow-lg rounded">
+    <table class="table table-hover table-bordered">
+        <thead class="table-primary text-center">
+            <tr>
+                <th>Lớp</th>
+                <th>Ngày</th>
+                <th>Giờ bắt đầu</th>
+                <th>Giờ kết thúc</th>
+                <th>Môn học</th>
+                <th>Giáo viên</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var schedule in Model)
+            {
+                <tr class="align-middle">
+                    <td>@schedule.ClassId</td>
+                    <td>@schedule.DayOfWeek</td>
+                    <td>@schedule.StartTime.ToString("HH:mm")</td>
+                    <td>@schedule.EndTime.ToString("HH:mm")</td>
+                    <td>@schedule.Subject</td>
+                    <td>@schedule.TeacherId</td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@schedule.Id" class="btn btn-warning btn-sm">
+                            <i class="fas fa-edit"></i> Sửa
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@schedule.Id" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i> Xóa
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,31 @@
+﻿@model Kindergarten_school.Models.StudentModel
+
+@{
+    ViewData["Title"] = "Chi tiết học sinh";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Họ</dt>
+        <dd class="col-sm-10">@Model.FirstName</dd>
+
+        <dt class="col-sm-2">Tên</dt>
+        <dd class="col-sm-10">@Model.LastName</dd>
+
+        <dt class="col-sm-2">Tuổi</dt>
+        <dd class="col-sm-10">@Model.Age</dd>
+
+        <dt class="col-sm-2">Lớp</dt>
+        <dd class="col-sm-10">@Model.ClassId</dd>
+
+        <dt class="col-sm-2">Địa chỉ</dt>
+        <dd class="col-sm-10">@Model.Address</dd>
+
+        <dt class="col-sm-2">Ngày nhập học</dt>
+        <dd class="col-sm-10">@Model.EnrollmentDate</dd>
+    </dl>
+</div>
+
+<a class="btn btn-secondary" asp-action="Index">Quay lại danh sách</a>

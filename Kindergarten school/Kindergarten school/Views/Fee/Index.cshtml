@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Kindergarten_school.Models.Fee>
+
+<h2 class="text-center mb-4">💰 Danh Sách Học Phí</h2>
+
+<div class="table-responsive shadow-lg rounded">
+    <table class="table table-hover table-bordered text-center">
+        <thead class="table-success">
+            <tr>
+                <th><i class="fas fa-user-graduate"></i> Mã Học Sinh</th>
+                <th><i class="fas fa-calendar-alt"></i> Số Ngày Đi Học</th>
+                <th><i class="fas fa-money-bill-wave"></i> Học Phí</th>
+                <th><i class="fas fa-info-circle"></i> Trạng Thái</th>
+                <th><i class="fas fa-clock"></i> Cập Nhật</th>
+                <th><i class="fas fa-cogs"></i> Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var fee in Model)
+            {
+                <tr class="align-middle">
+                    <td>@fee.StudentId</td>
+                    <td>@fee.DaysAttended</td>
+                    <td>@fee.Amount.ToString("C")</td>
+                    <td>
+                        @if (fee.Status == "Đã Thanh Toán")
+                        {
+                            <span class="badge bg-success">✔ Đã Thanh Toán</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning text-dark">❗ Chưa Thanh Toán</span>
+                        }
+                    </td>
+                    <td>@fee.LastUpdated.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@fee.Id" class="btn btn-warning btn-sm">
+                            <i class="fas fa-edit"></i> Sửa
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@fee.Id" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i> Xóa
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
