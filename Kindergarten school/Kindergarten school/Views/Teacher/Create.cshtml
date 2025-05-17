@@ -1,0 +1,35 @@
+﻿@model Kindergarten_school.Models.TeacherModel
+
+<h2>Thêm giáo viên mới</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Họ</label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Tên</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Môn học</label>
+        <input asp-for="Subject" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Số điện thoại</label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Ngày vào làm</label>
+        <input asp-for="HireDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Địa chỉ</label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Mã giáo viên</label>
+        <input asp-for="TeacherID" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Thêm</button>
+</form>

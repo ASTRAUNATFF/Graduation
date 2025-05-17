@@ -1,0 +1,47 @@
+﻿@model Kindergarten_school.Models.TeacherModel
+
+<div class="container mt-5 p-4 rounded bg-white shadow-sm">
+    <h2 class="text-danger text-center mb-4 fw-bold">
+        <i class="bi bi-pencil-square"></i> Sửa thông tin giáo viên
+    </h2>
+
+    <form asp-action="Edit" method="post" class="px-5">
+        <div class="form-group mb-3">
+            <label class="fw-bold">🧑‍🏫 Họ</label>
+            <input asp-for="FirstName" class="form-control rounded-pill" />
+        </div>
+        <div class="form-group mb-3">
+            <label class="fw-bold">🧑‍🏫 Tên</label>
+            <input asp-for="LastName" class="form-control rounded-pill" />
+        </div>
+        <div class="form-group mb-3">
+            <label class="fw-bold">📚 Môn học</label>
+            <input asp-for="Subject" class="form-control rounded-pill" />
+        </div>
+        <div class="form-group mb-3">
+            <label class="fw-bold">📞 Số điện thoại</label>
+            <input asp-for="Phone" class="form-control rounded-pill" />
+        </div>
+        <div class="form-group mb-3">
+            <label class="fw-bold">📅 Ngày vào làm</label>
+            <input asp-for="HireDate" class="form-control rounded-pill" />
+        </div>
+        <div class="form-group mb-3">
+            <label class="fw-bold">📍 Địa chỉ</label>
+            <input asp-for="Address" class="form-control rounded-pill" />
+        </div>
+        <div class="form-group mb-4">
+            <label class="fw-bold">🆔 Mã giáo viên</label>
+            <input asp-for="TeacherID" class="form-control rounded-pill" />
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-warning px-5 py-2 rounded-pill fw-bold">
+                💾 Lưu thay đổi
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- Link Bootstrap icons nếu chưa có -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />

@@ -1,0 +1,171 @@
+﻿@model Kindergarten_school.Models.AttendanceViewModel
+@using System.Security.Claims
+
+@{
+    ViewData["Title"] = "Điểm danh học sinh";
+    var isEditable = User.IsInRole("admin") || User.IsInRole("teacher");
+    var roleClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role);
+    var role = roleClaim?.Value ?? "";
+}
+
+<style>
+    body {
+        background-color: #f3efe6;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 1rem;
+    }
+
+    .table thead {
+        background: linear-gradient(to right, #ff7e5f, #ff6f61);
+    }
+
+    .table th,
+    .table td {
+        vertical-align: middle !important;
+        text-align: center;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.3);
+    }
+
+    .btn-home {
+        background-color: #28a745;
+        color: white;
+        font-weight: bold;
+        border-radius: 30px;
+    }
+
+        .btn-home:hover {
+            background-color: #138496;
+        }
+
+</style>
+
+<div class="container my-5">
+    <div class="card shadow-lg rounded-4 p-4">
+        <h2 class="text-center text-danger mb-4">
+            📋 Điểm danh học sinh
+        </h2>
+
+        <form method="get" asp-controller="Attendance" asp-action="Index" class="mb-4 text-center">
+            <label for="selectedMonth" class="form-label fw-semibold">Chọn tháng:</label>
+            <select id="selectedMonth" name="selectedMonth" class="form-select d-inline w-auto"
+                    onchange="this.form.submit()">
+                @for (int i = 1; i <= 12; i++)
+                {
+                    <option value="@i" selected="@(ViewBag.SelectedMonth == i ? "selected" : null)">Tháng @i</option>
+                }
+            </select>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center align-middle">
+                <thead class="table-danger text-white">
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ và tên</th>
+                        @for (int day = 1; day <= (int)ViewBag.DaysInMonth; day++)
+                        {
+                            <th>@day</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Students.Count; i++)
+                    {
+                        var student = Model.Students[i];
+                        <tr>
+                            <td>@(i + 1)</td>
+                            <td class="fw-semibold">@student.FullName</td>
+                            @for (int day = 1; day <= (int)ViewBag.DaysInMonth; day++)
+                            {
+                                var currentDate = new DateTime(DateTime.Today.Year, Model.SelectedMonth, day);
+                                var record = Model.AttendanceRecords
+                                .FirstOrDefault(a => a.StudentID == student.Id && a.Date.ToLocalTime().Date == currentDate.Date);
+
+                                bool isChecked = record?.Status == "Có mặt";
+
+                                <td>
+                                    <input type="checkbox"
+                                           class="form-check-input attendance-checkbox"
+                                           data-student-id="@student.Id"
+                                           data-date="@currentDate"
+                                           data-original-checked="@isChecked.ToString().ToLower()"
+                                    @(isChecked ? "checked" : "") />
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    @if (role == "admin")
+    {
+        <a href="/Admin/AdminDashboard" class="btn btn-lg btn-home px-5 shadow-sm">
+            <i class="fas fa-home me-2"></i>Trở về Home
+        </a>
+    }
+    else if (role == "teacher")
+    {
+        <a href="/Admin/TeacherHomeLand" class="btn btn-lg btn-home px-5 shadow-sm">
+            <i class="fas fa-home me-2"></i>Trở về Home
+        </a>
+    }
+    else if (role == "parent")
+    {
+        <a href="/Home/Index" class="btn btn-lg btn-home px-5 shadow-sm">
+            <i class="fas fa-home me-2"></i>Trở về Home
+        </a>
+    }
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.attendance-checkbox').each(function () {
+                $(this).data('original-checked', $(this).is(':checked'));
+            });
+
+            $('.attendance-checkbox').on('change', function () {
+                var checkbox = $(this);
+                var originalChecked = checkbox.data('original-checked');
+                var studentId = checkbox.data('student-id');
+                var date = checkbox.data('date');
+                var status = checkbox.is(':checked') ? 'Có mặt' : 'Vắng mặt';
+                var isChecked = checkbox.is(':checked');
+
+                var formData = new FormData();
+                formData.append('StudentID', studentId);
+                formData.append('Date', date);
+                formData.append('Status', status);
+                formData.append('IsChecked', isChecked);
+
+                $.ajax({
+                    url: '/attendance/check-box',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        checkbox.data('original-checked', checkbox.is(':checked'));
+                        console.log('Điểm danh thành công:', response);
+                    },
+                    error: function () {
+                        alert('Lỗi khi lưu điểm danh!');
+                        checkbox.prop('checked', originalChecked);
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,139 @@
+﻿@using System.Security.Claims
+@{
+    List<Kindergarten_school.Models.ClassModel> listClass = ViewBag.ListClass;
+    List<Kindergarten_school.Models.StudentModel> listStudent = ViewBag.ListStudent;
+    var roleClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role);
+    var role = roleClaim?.Value ?? "";
+}
+
+<style>
+    .custom-card {
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 4px 12px rgba(255, 153, 0, 0.2);
+    }
+
+    .form-label {
+        font-weight: bold;
+        color: #ff6600;
+    }
+
+    .form-control:focus {
+        border-color: #ff944d;
+        box-shadow: 0 0 5px rgba(255, 133, 51, 0.5);
+    }
+
+    .btn-orange {
+        background: linear-gradient(to right, #ff9966, #ff5e62);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+        .btn-orange:hover {
+            background: linear-gradient(to right, #ff5e62, #ff9966);
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.4);
+        }
+
+    .card-header-orange {
+        background-color: #ff7043;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 15px;
+    }
+
+    .btn-home {
+        background-color: #28a745;
+        color: white;
+        font-weight: bold;
+    }
+
+    .table-container {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        background: white;
+        padding: 15px;
+    }
+
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card custom-card">
+            <div class="card-header-orange">
+                📢 Gửi Thông Báo
+            </div>
+            <div class="card-body">
+                <form id="formNotification">
+                    <div class="mb-3">
+                        <label class="form-label">Loại thông báo</label>
+                        <select class="form-control" id="type">
+                            <option value="ToAll">Tất cả</option>
+                            <option value="ToClass">Theo lớp</option>
+                            <option value="ToStudent">Theo cá nhân</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="display: none;" id="selectClass">
+                        <label for="ClassID" class="form-label">Lớp học</label>
+                        <select id="ClassID" name="ClassID" class="form-control">
+                            @foreach (var item in listClass)
+                            {
+                                <option value="@item.ClassID">@item.ClassName</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="display: none;" id="selectUser">
+                        <label for="StudentID" class="form-label">Học sinh</label>
+                        <select id="StudentID" name="StudentID" class="form-control">
+                            @foreach (var item in listStudent)
+                            {
+                                <option value="@item.StudentID">@item.FirstName @item.LastName</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nội dung</label>
+                        <textarea class="form-control" id="content" placeholder="Nhập nội dung thông báo" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-orange mt-3">🚀 Gửi thông báo</button>
+
+                    <div class="text-center mt-3">
+                        @if (role == "admin")
+                        {
+                            <a href="/Admin/AdminDashboard" class="btn btn-lg btn-home px-5">
+                                <i class="fas fa-home"></i> Trở về Home
+                            </a>
+                        }
+                        else if (role == "teacher")
+                        {
+                            <a href="/Admin/TeacherHomeLand" class="btn btn-lg btn-home px-5">
+                                <i class="fas fa-home"></i> Trở về Home
+                            </a>
+                        }
+                        else if (role == "parent")
+                        {
+                            <a href="/Home/Index" class="btn btn-lg btn-home px-5">
+                                <i class="fas fa-home"></i> Trở về Home
+                            </a>
+                        }
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/admin-js/push-notification.js"></script>
+}

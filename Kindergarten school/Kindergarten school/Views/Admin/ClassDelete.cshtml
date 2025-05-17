@@ -1,0 +1,8 @@
+﻿@model Kindergarten_school.Models.ClassModel
+
+<h2>Xóa lớp</h2>
+<p>Bạn có chắc chắn muốn xóa lớp <strong>@Model.ClassName</strong> không?</p>
+<form asp-action="ClassDeleteConfirmed" method="post">
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

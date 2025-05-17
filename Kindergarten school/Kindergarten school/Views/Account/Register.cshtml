@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+        <h2 class="text-center mb-4">Register</h2>
+
+        <!-- Hiển thị lỗi nếu có -->
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger text-center" role="alert">
+                @ViewBag.Error
+            </div>
+        }
+
+        <!-- Form đăng ký -->
+        <form asp-action="Register" method="post">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                    <input type="tel"
+                           class="form-control"
+                           id="phone"
+                           name="phone"
+                           placeholder="Enter your phone number"
+                           pattern="^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$"
+                           required />
+                </div>
+                <small class="form-text text-muted">
+                    Enter a valid phone number (e.g., +1234567890 or 012-345-6789).
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter a secure password" required />
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mt-3">Register</button>
+        </form>
+
+        <!-- Đăng nhập nếu đã có tài khoản -->
+        <div class="text-center mt-3">
+            <p>Already have an account? <a asp-action="Login" asp-controller="Account">Login here</a></p>
+        </div>
+    </div>
+</div>

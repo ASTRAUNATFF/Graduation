@@ -1,0 +1,93 @@
+﻿@model List<Kindergarten_school.DTO.HealthNotificationDTO>
+
+<style>
+    .gradient-health-card {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        color: white;
+        border-radius: 16px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        margin: 12px 0;
+        overflow: hidden;
+    }
+
+    .gradient-health-header {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 16px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .gradient-health-body {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .health-item {
+        margin-bottom: 16px;
+        padding: 12px;
+        border-radius: 8px;
+        background: #ffe0d3;
+        color: #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .health-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .health-details {
+        font-size: 1rem;
+        margin-top: 4px;
+        color: #555;
+    }
+
+    .no-notification {
+        text-align: center;
+        color: #777;
+        margin: 20px 0;
+    }
+
+    .back-button {
+        margin-top: 12px;
+        padding: 8px 16px;
+        background-color: #ff7e5f;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .back-button:hover {
+            background-color: #feb47b;
+        }
+</style>
+<button class="back-button" onclick="location.href='https://localhost:7147/profile'">Quay lại</button>
+
+<div class="card gradient-health-card">
+    <h5 class="gradient-health-header">📢 Thông báo Sức khỏe</h5>
+    <div class="gradient-health-body" id="cardHealth">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <div class="health-item">
+                    <h5 class="health-title">🏥 @item.HealthStatus</h5>
+                    <p class="health-details">👦 Học sinh: <strong>@item.StudentName</strong></p>
+                    <p class="health-details">📅 Ngày cập nhật: <strong>@item.createDate.ToString("HH:mm dd-MM-yyyy")</strong></p>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="no-notification">Không có thông báo nào.</p>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/parent-js/notification-health.js"></script>
+}

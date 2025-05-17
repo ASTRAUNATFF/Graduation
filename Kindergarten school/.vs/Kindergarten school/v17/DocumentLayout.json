@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\bigbackupforgraduation\\kindergarten school\\kindergarten school\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\bigbackupforgraduation\\kindergarten school\\kindergarten school\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\bigbackupforgraduation\\kindergarten school\\kindergarten school\\views\\adminnotification\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\views\\adminnotification\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\Kindergarten school\\appsettings.json",
+              "RelativeDocumentMoniker": "Kindergarten school\\appsettings.json",
+              "ToolTip": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\Kindergarten school\\appsettings.json",
+              "RelativeToolTip": "Kindergarten school\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-14T16:22:25.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\Kindergarten school\\Views\\AdminNotification\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kindergarten school\\Views\\AdminNotification\\Index.cshtml",
+              "ToolTip": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\Kindergarten school\\Views\\AdminNotification\\Index.cshtml",
+              "RelativeToolTip": "Kindergarten school\\Views\\AdminNotification\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAD4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T13:55:11.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\Kindergarten school\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "Kindergarten school\\Views\\Admin\\AdminDashboard.cshtml",
+              "ToolTip": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\Kindergarten school\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeToolTip": "Kindergarten school\\Views\\Admin\\AdminDashboard.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T13:48:54.258Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

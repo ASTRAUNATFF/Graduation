@@ -1,0 +1,28 @@
+﻿@model Kindergarten_school.Models.NotificationModel
+
+<div class="card shadow p-4 rounded mb-4 border-danger-subtle">
+    <h2 class="fw-bold text-danger mb-3">
+        ⚠️ Xác nhận xóa thông báo
+    </h2>
+
+    <p class="fs-5">Bạn có chắc chắn muốn xóa thông báo dưới đây không?</p>
+
+    <div class="bg-light rounded p-3 mb-3 border">
+        <h5 class="fw-bold text-dark">📌 @Model.Title</h5>
+        <p>✉️ @Model.Message</p>
+        <p><strong>🕒 Ngày tạo:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+    </div>
+
+    <form asp-action="Delete" method="post" class="d-flex justify-content-between">
+        <input type="hidden" asp-for="Id" />
+
+        <button type="submit" class="btn fw-bold text-white px-4 py-2"
+                style="background: linear-gradient(90deg, #ff416c, #ff4b2b);">
+            🗑️ Xóa
+        </button>
+
+        <a asp-action="Index" class="btn btn-outline-secondary px-4 py-2 fw-bold">
+            ❌ Hủy
+        </a>
+    </form>
+</div>

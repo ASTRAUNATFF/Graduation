@@ -1,0 +1,35 @@
+﻿@model Kindergarten_school.Models.ScheduleModel
+
+@{
+    ViewData["Title"] = "Chỉnh sửa lịch học";
+}
+
+<h2>Chỉnh sửa lịch học</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="Time">Thời gian</label>
+        <input type="text" id="Time" asp-for="TimeSlot" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Activity">Hoạt động</label>
+        <select id="Activity" asp-for="Activity" class="form-control" required>
+            <option value="">-- Chọn hoạt động --</option>
+            @foreach (var activity in ViewBag.Activities)
+            {
+                <option value="@activity" selected="@(activity == Model.Activity ? "selected" : null)">@activity</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="TeacherName">Tên giáo viên</label>
+        <input type="text" id="TeacherName" asp-for="TeacherName" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

@@ -1,0 +1,54 @@
+﻿@model Kindergarten_school.Models.Fee
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">➕ Thêm Học Phí</h2>
+
+    <div class="card p-4 shadow-lg">
+        <form asp-action="Create">
+            <div class="mb-3">
+                <label class="form-label">Mã Học Phí</label>
+                <input type="text" asp-for="FeeID" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mã Học Sinh</label>
+                <input type="number" asp-for="StudentId" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Loại Học Phí</label>
+                <input type="text" asp-for="FeeTypes" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Số Tiền</label>
+                <input type="number" asp-for="Amount" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Số Ngày Đi Học</label>
+                <input type="number" asp-for="DaysAttended" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Trạng Thái</label>
+                <select asp-for="Status" class="form-control">
+                    <option value="Chưa thanh toán">Chưa thanh toán</option>
+                    <option value="Đã thanh toán">Đã thanh toán</option>
+                    <option value="Quá hạn">Quá hạn</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Hạn Thanh Toán</label>
+                <input type="date" asp-for="DueDate" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Ngày Cập Nhật</label>
+                <input type="datetime-local" asp-for="LastUpdated" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" readonly />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mã Điểm Danh</label>
+                <input type="number" asp-for="AttendanceId" class="form-control" required />
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">✅ Lưu</button>
+                <a asp-action="Index" class="btn btn-secondary">🔙 Quay Lại</a>
+            </div>
+        </form>
+    </div>
+</div>
