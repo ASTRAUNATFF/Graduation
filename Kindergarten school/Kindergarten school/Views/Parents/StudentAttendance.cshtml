@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Kindergarten_school.Models.Attendance>
+
+<style>
+    .gradient-btn {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        margin-bottom: 12px;
+        transition: background-color 0.3s ease;
+    }
+
+        .gradient-btn:hover {
+            background: linear-gradient(135deg, #feb47b, #ff7e5f);
+        }
+
+    .gradient-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 16px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+        .gradient-table th, .gradient-table td {
+            padding: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .gradient-table th {
+            background-color: #ff7e5f;
+            color: white;
+        }
+
+        .gradient-table tr:nth-child(even) {
+            background-color: #ffe0d3;
+        }
+
+        .gradient-table tr:hover {
+            background-color: #ffb19d;
+        }
+
+    .centered-title {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+</style>
+
+<h2 class="centered-title">📅 Danh sách điểm danh</h2>
+<a class="gradient-btn" href="https://localhost:7147/profile">🔙 Trở về</a>
+
+<table class="gradient-table">
+    <thead>
+        <tr>
+            <th>Ngày</th>
+            <th>Trạng Thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var attendance in Model)
+        {
+            <tr>
+                <td>@attendance.Date.ToString("dd/MM/yyyy")</td>
+                <td>@attendance.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

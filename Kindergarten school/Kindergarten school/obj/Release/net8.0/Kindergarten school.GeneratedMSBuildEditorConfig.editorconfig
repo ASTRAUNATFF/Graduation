@@ -1,0 +1,289 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Kindergarten_school
+build_property.RootNamespace = Kindergarten_school
+build_property.ProjectDir = D:\Education\MVC\BigBackupForGraduation\Kindergarten school\Kindergarten school\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\Education\MVC\BigBackupForGraduation\Kindergarten school\Kindergarten school
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/AdminNotification/HealthReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ob3RpZmljYXRpb25cSGVhbHRoUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/AdminNotification/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ob3RpZmljYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/ClassCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xhc3NDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/ClassDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xhc3NEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/ClassDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xhc3NEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/ClassDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xhc3NEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/ClassEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xhc3NFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/StudentCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3R1ZGVudENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/StudentDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3R1ZGVudERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/StudentDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3R1ZGVudERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/StudentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3R1ZGVudERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/StudentEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3R1ZGVudEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/TeacherCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGVhY2hlckNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/TeacherDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGVhY2hlckRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/TeacherDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGVhY2hlckRlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/TeacherDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGVhY2hlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/TeacherEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGVhY2hlckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Admin/TeacherHomeLand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGVhY2hlckhvbWVMYW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Attendance/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Dailyreports/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFpbHlyZXBvcnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Feedback/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Feedback/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Fee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Fee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Fee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Fee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Notification/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Notification/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Notification/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Notification/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/ChatParent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xDaGF0UGFyZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/GetBehavior.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xHZXRCZWhhdmlvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/GetNotificationsByParent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xHZXROb3RpZmljYXRpb25zQnlQYXJlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/GetNotificationsHealth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xHZXROb3RpZmljYXRpb25zSGVhbHRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/LearningProgress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xMZWFybmluZ1Byb2dyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/ListStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xMaXN0U3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/StudentAttendance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xTdHVkZW50QXR0ZW5kYW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Parents/StudentFees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xTdHVkZW50RmVlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Schedule/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Schedule/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Schedule/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Schedule/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Schedule/ViewByClass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcVmlld0J5Q2xhc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Teacher/AddBehavior.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxBZGRCZWhhdmlvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Teacher/ChatTeacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxDaGF0VGVhY2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Teacher/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Teacher/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Teacher/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Teacher/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Teacher/GetBehavior.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxHZXRCZWhhdmlvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Teacher/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Transactions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/TuitionFees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVpdGlvbkZlZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education/MVC/BigBackupForGraduation/Kindergarten school/Kindergarten school/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ci6wo6ieud

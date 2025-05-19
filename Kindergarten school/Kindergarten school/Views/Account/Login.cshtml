@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+</style>
+
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+        <h2 class="text-center mb-4">Login</h2>
+
+        <!-- Hiển thị lỗi nếu có -->
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger text-center" role="alert">
+                @ViewBag.Error
+            </div>
+        }
+
+        <!-- Form đăng nhập -->
+        <form asp-action="Login" method="post">
+            <div class="mb-3">
+                <label for="phone" class="form-label">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your username" required />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required />
+                </div>
+            </div>
+
+            <!-- Trả về URL nếu có -->
+            @if (ViewBag.ReturnUrl != null)
+            {
+                <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+            }
+
+            <button type="submit" class="btn btn-primary w-100 mt-3">Login</button>
+        </form>
+
+        <!-- Đăng ký và quên mật khẩu -->
+        <div class="text-center mt-3">
+            <p>Don't have an account? <a asp-action="Index" asp-controller="Home">Back to Home Page</a></p>
+            <p><a asp-action="ForgotPassword" asp-controller="Account">Forgot your password?</a></p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+﻿@model Kindergarten_school.Models.StudentModel
+@using System.Security.Claims
+
+@{
+    ViewData["Title"] = "Chi tiết học sinh";
+    var roleClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role);
+    var role = roleClaim?.Value ?? "";
+}
+
+<style>
+    body {
+        background-color: #f3efe6;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .card-detail {
+        background-color: #ffffff;
+        border-radius: 1rem;
+        padding: 2.5rem;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: 2rem auto;
+    }
+
+    h2.title {
+        color: #ff6f61;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .dl-horizontal dt {
+        font-weight: 600;
+        color: #444;
+    }
+
+    .dl-horizontal dd {
+        color: #666;
+    }
+
+    .btn-home {
+        background-color: #28a745;
+        color: white;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 0.6rem 2rem;
+        font-size: 1.1rem;
+        transition: 0.3s ease-in-out;
+    }
+
+        .btn-home:hover {
+            background-color: #1e7e34;
+            transform: scale(1.05);
+        }
+</style>
+
+<div class="card-detail">
+    <h2 class="title">📄 Thông tin học sinh</h2>
+
+    <dl class="row dl-horizontal">
+        <dt class="col-sm-4">👤 Họ</dt>
+        <dd class="col-sm-8">@Model.FirstName</dd>
+
+        <dt class="col-sm-4">👶 Tên</dt>
+        <dd class="col-sm-8">@Model.LastName</dd>
+
+        <dt class="col-sm-4">🎂 Tuổi</dt>
+        <dd class="col-sm-8">@Model.Age</dd>
+
+        <dt class="col-sm-4">🏫 Lớp</dt>
+        <dd class="col-sm-8">@Model.ClassID</dd>
+
+        <dt class="col-sm-4">📍 Địa chỉ</dt>
+        <dd class="col-sm-8">@Model.Address</dd>
+
+        <dt class="col-sm-4">📅 Ngày nhập học</dt>
+        <dd class="col-sm-8">@Model.EnrollmentDate.ToString("dd/MM/yyyy")</dd>
+    </dl>
+
+    <div class="text-center mt-4">
+        @if (role == "admin")
+        {
+            <a href="/Admin/AdminDashboard" class="btn btn-home shadow-sm">
+                <i class="fas fa-home me-2"></i>Trở về danh sách
+            </a>
+        }
+        else if (role == "teacher")
+        {
+            <a href="/Admin/TeacherHomeLand" class="btn btn-home shadow-sm">
+                <i class="fas fa-home me-2"></i>Trở về danh sách
+            </a>
+        }
+        else if (role == "parent")
+        {
+            <a href="/Home/Index" class="btn btn-home shadow-sm">
+                <i class="fas fa-home me-2"></i>Trở về trang chủ
+            </a>
+        }
+    </div>
+</div>

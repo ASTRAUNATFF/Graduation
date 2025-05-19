@@ -1,0 +1,14 @@
+﻿@model Kindergarten_school.Models.TeacherModel
+
+<h2>Thông tin chi tiết giáo viên</h2>
+
+<div>
+    <h3>@Model.FirstName @Model.LastName</h3>
+    <p>Môn học: @Model.Subject</p>
+    <p>Số điện thoại: @Model.Phone</p>
+    <p>Ngày vào làm: @Model.HireDate</p>
+    <p>Địa chỉ: @Model.Address</p>
+    <p>Mã giáo viên: @Model.TeacherID</p>
+</div>
+
+<a asp-action="Index" class="btn btn-primary">Quay lại danh sách</a>

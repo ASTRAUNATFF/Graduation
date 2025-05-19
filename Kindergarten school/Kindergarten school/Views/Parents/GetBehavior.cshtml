@@ -1,0 +1,34 @@
+﻿@model List<Kindergarten_school.Models.BehaviorDisplayViewModel>
+
+@{
+    ViewData["Title"] = "Phiếu Bé Ngoan";
+}
+
+<h2>Danh sách phiếu bé ngoan</h2>
+
+
+<a class="btn btn-secondary mb-2" href="/profile/list-student">Trở về</a>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Học sinh</th>
+            <th>Lớp</th>
+            <th>Tiêu đề</th>
+            <th>Mô tả</th>
+            <th>Ngày tạo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.StudentName</td>
+                <td>@item.ClassName</td>
+                <td>@item.Title</td>
+                <td>@item.Decription</td>
+                <td>@item.CreateDate.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>

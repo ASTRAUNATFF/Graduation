@@ -1,0 +1,180 @@
+﻿@model IEnumerable<Kindergarten_school.Models.ScheduleModel>
+
+@{
+    ViewData["Title"] = "Thời khóa biểu";
+    int slotIndex = 1;
+    string role = ViewBag.UserRole as string ?? "";
+    bool isEditable = role == "admin";
+}
+
+<style>
+    .btn-home {
+        background-color: #28a745; /* Bootstrap primary blue */
+        color: white;
+        font-weight: bold;
+        border-radius: 50px;
+        padding: 10px 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-home:hover {
+            background-color: #0056b3; /* darker on hover */
+            color: white;
+        }</style>
+
+<div class="schedule-container">
+    <h2 class="text-center schedule-title">📅 THỜI KHÓA BIỂU 📅</h2>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+    @if (isEditable)
+    {
+        <form method="get" asp-action="Index">
+            <select id="classId" name="classId" onchange="this.form.submit()">
+                <option value="">-- Chọn lớp --</option>
+                @foreach (var cls in ViewBag.Classes)
+                {
+                    <option value="@cls.ClassID">
+                        @cls.ClassName
+                    </option>
+                }
+            </select>
+        </form>
+    }
+
+    <table class="table schedule-table">
+        <thead>
+            <tr>
+                <th>Thời gian</th>
+                <th>Thứ Hai</th>
+                <th>Thứ Ba</th>
+                <th>Thứ Tư</th>
+                <th>Thứ Năm</th>
+                <th>Thứ Sáu</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var timeSlots = ViewBag.TimeSlots as List<string>;
+                var activities = ViewBag.Activities as List<string>;
+
+                foreach (var timeSlot in timeSlots)
+                {
+                    <tr>
+                        <td class="time-slot">@timeSlot</td>
+                        @for (int i = 0; i < 5; i++)
+                        {
+                            var schedule = Model.FirstOrDefault(s => s.TimeSlot == slotIndex && s.DayOfWeek == i + 2);
+
+                            bool isFixedMorning = timeSlot == "07:00 - 07:30";
+                            bool isFixedLunchNap = timeSlot == "11:50 - 14:00";
+
+                            <td class="activity-cell">
+                                @if (isFixedMorning)
+                                {
+                                    <strong>Thể dục buổi sáng</strong>
+                                    <br />
+                                    <span class="teacher-name">@(schedule?.TeacherName ?? "Chưa có giáo viên")</span>
+                                }
+                                else if (isFixedLunchNap)
+                                {
+                                    <strong>Ăn trưa & Ngủ trưa</strong>
+                                    <br />
+                                    <span class="teacher-name">@(schedule?.TeacherName ?? "Chưa có giáo viên")</span>
+                                }
+                                else
+                                {
+                                    @if (isEditable)
+                                    {
+                                        <select class="form-control activity-select" data-id="@(schedule?.Id ?? "0")">
+                                            @foreach (var activity in activities)
+                                            {
+                                                var selected = schedule?.Activity == activity ? "selected" : "";
+                                                <option value="@activity" selected="@selected">@activity</option>
+                                            }
+
+                                        </select>
+                                    }
+                                    else
+                                    {
+                                        <strong>@(schedule?.Activity ?? "Chưa có hoạt động")</strong>
+                                    }
+
+                                    <br />
+                                    <span class="teacher-name">@(schedule?.TeacherName ?? "Chưa có giáo viên")</span>
+                                }
+                            </td>
+                        }
+                    </tr>
+                    slotIndex++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="no-schedule">Không có lịch học nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (isEditable)
+    {
+        <a asp-action="Create" class="btn btn-primary schedule-button">➕ Thêm lịch học</a>
+    }
+
+    <div class="text-center mt-3">
+        @if (role == "admin")
+        {
+            <a href="/Admin/AdminDashboard" class="btn btn-lg btn-home px-5">
+                <i class="fas fa-home"></i> Trở về Home
+            </a>
+        }
+        else if (role == "teacher")
+        {
+            <a href="/Admin/TeacherHomeLand" class="btn btn-lg btn-home px-5">
+                <i class="fas fa-home"></i> Trở về Home
+            </a>
+        }
+        else if (role == "parent")
+        {
+            <a href="/Home/Index" class="btn btn-lg btn-home px-5">
+                <i class="fas fa-home"></i> Trở về Home
+            </a>
+        }
+    </div>
+
+</div>
+
+@if (isEditable)
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".activity-select").forEach(select => {
+                select.addEventListener("change", function () {
+                    const id = this.getAttribute("data-id");
+                    const activity = this.value;
+
+                    if (id != "0") {
+                        fetch(`/Schedule/UpdateActivity`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ id, activity })
+                        }).then(response => response.json()).then(data => {
+                            if (data.success) {
+                                alert("✅ Cập nhật thành công!");
+                            } else {
+                                alert("❌ Cập nhật thất bại!");
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

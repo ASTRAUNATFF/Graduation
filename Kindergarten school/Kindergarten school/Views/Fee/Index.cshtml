@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Kindergarten_school.Models.Fee>
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">📋 Danh Sách Học Phí</h2>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a asp-action="Create" class="btn btn-success">➕ Thêm Học Phí</a>
+        <input type="text" id="searchBox" class="form-control w-25" placeholder="🔍 Tìm kiếm...">
+    </div>
+
+    <div>
+        <form method="get" asp-action="Index" class="mb-4 text-center">
+            <label for="studentSelect" class="form-label fw-bold">Chọn Học Sinh:</label>
+            <select id="studentSelect" name="studentId" class="form-select d-inline-block w-auto" onchange="this.form.submit()">
+                <option value="">-- Tất cả học sinh --</option>
+                @if (ViewBag.Students != null)
+                {
+                    @foreach (var student in ViewBag.Students)
+                    {
+                        <option value="@student.StudentID" selected="@(ViewBag.SelectedStudentId == student.StudentID ? "selected" : null)">
+                            @(student.FullName ?? "Không xác định")
+                        </option>
+                    }
+                }
+            </select>
+        </form>
+    </div>
+
+    <table class="table table-hover table-bordered shadow-lg">
+        <thead class="table-dark">
+            <tr>
+                <th>Mã HP</th>
+                <th>Mã HS</th>
+                <th>Loại</th>
+                <th>Số Tiền</th>
+                <th>Số Ngày</th>
+                <th>Trạng Thái</th>
+                <th>Hạn Thanh Toán</th>
+                <th>Ngày Cập Nhật</th>
+                <th>Điểm Danh</th>
+                <th class="text-center">⚙️ Hành Động</th>
+            </tr>
+        </thead>
+        <tbody id="feeTable">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.FeeID</td>
+                    <td>@item.StudentId</td>
+                    <td>@(item.FeeTypes ?? "Không có")</td>
+                    <td>@String.Format("{0:N0} VND", item.Amount)</td>
+                    <td>@item.DaysAttended ngày</td>
+                    <td>@(item.Status ?? "Chưa xác định")</td>
+                    <td>@item.DueDate.ToString("dd/MM/yyyy")</td>
+                    <td>@item.LastUpdated.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.AttendanceId</td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">✏️</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">🗑</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.getElementById("searchBox").addEventListener("keyup", function () {
+        let filter = this.value.toUpperCase();
+        let rows = document.querySelector("#feeTable").getElementsByTagName("tr");
+
+        for (let i = 0; i < rows.length; i++) {
+            let txtValue = rows[i].textContent || rows[i].innerText;
+            rows[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+        }
+    });
+</script>
