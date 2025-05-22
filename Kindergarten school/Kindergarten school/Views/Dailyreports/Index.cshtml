@@ -1,0 +1,52 @@
+﻿@model Kindergarten_school.Models.DailyreportsModel
+@{
+    List<Kindergarten_school.Models.ClassModel> listClass = ViewBag.ListClass;
+    List<Kindergarten_school.Models.StudentModel> listStudent = ViewBag.ListStudent;
+}
+
+<h2>Tiến độ học tập giáo viên</h2>
+
+<form asp-action="Index" asp-controller="Dailyreports" method="post">
+    <div class="form-group">
+        <label for="Activities">Hoạt động</label>
+        <input type="text" class="form-control" id="Activities" name="Activities" required />
+    </div>
+    <div class="form-group">
+        <label for="Meal">Ăn uống</label>
+        <input type="text" class="form-control" id="Meal" name="Meal" required />
+    </div>
+    <div class="form-group">
+        <label for="NapTime">Hiện tại</label>
+        <input type="text" class="form-control" id="NapTime" name="NapTime" />
+    </div>
+    <div class="form-group">
+        <label for="Description">Mô tả</label>
+        <input type="text" class="form-control" id="Description" name="Description" required />
+    </div>
+    <div class="form-group">
+        <label for="ClassID">Lớp học</label>
+        <select id="ClassID" name="ClassID" class="form-control">
+            @foreach (var item in listClass)
+            {
+                <option value="@item.ClassID">@item.ClassName</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="StudentID">Học sinh</label>
+        <select id="StudentID" name="StudentID" class="form-control">
+            @foreach (var item in listStudent)
+            {
+                <option value="@item.StudentID">@item.FirstName @item.LastName</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success mt-3">Lưu</button>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger mt-3">
+        Vui lòng kiểm tra lại thông tin!
+    </div>
+}

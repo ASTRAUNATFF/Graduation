@@ -1,0 +1,69 @@
+﻿@model Kindergarten_school.Models.BehaviorCreateViewModel
+
+@{
+    ViewData["Title"] = "Thêm Phiếu Bé Ngoan";
+}
+
+<h2>Thêm Phiếu Bé Ngoan</h2>
+
+<form asp-action="AddBehavior" method="post">
+    <input type="hidden" name="teacherId" value="@User.FindFirst("TeacherIdInt")?.Value" />
+    <div class="form-group">
+        <label>Lớp</label>
+        <select id="classSelect" asp-for="SelectedClassId" class="form-control">
+            <option value="">-- Chọn lớp --</option>
+            @foreach (var cls in Model.Classes)
+            {
+                <option value="@cls.ClassID">@cls.ClassName</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Học sinh</label>
+        <select id="studentSelect" asp-for="SelectedStudentId" class="form-control">
+            <option value="">-- Chọn học sinh --</option>
+          
+        </select>
+    </div>
+
+  
+
+    <div class="form-group">
+        <label>Tiêu đề</label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Mô tả</label>
+        <textarea asp-for="Decription" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Ngày tạo</label>
+        <input asp-for="CreateDate" class="form-control" type="date" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
+</form>
+@section Scripts {
+    <script>
+        $('#classSelect').on('change', function () {
+            var classId = $(this).val();
+
+            if (classId) {
+                $.get('/teacher/get-students-by-class/' + classId, function (data) {
+                    var $studentSelect = $('#studentSelect');
+                    $studentSelect.empty();
+                    $studentSelect.append('<option value="">-- Chọn học sinh --</option>');
+
+                    $.each(data, function (i, student) {
+                        $studentSelect.append('<option value="' + student.studentID + '">' + student.fullName + '</option>');
+                    });
+                });
+            } else {
+                $('#studentSelect').empty().append('<option value="">-- Chọn học sinh --</option>');
+            }
+        });
+    </script>
+}

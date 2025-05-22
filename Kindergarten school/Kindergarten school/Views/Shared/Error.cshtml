@@ -1,0 +1,13 @@
+﻿@model Kindergarten_school.Models.ErrorViewModel
+
+<h1 class="text-danger">Đã xảy ra lỗi</h1>
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <p class="text-danger">Thông báo: @Model.Message</p>
+}
+
+@if (Model.ShowRequestId)
+{
+    <p>Mã lỗi: <code>@Model.RequestId</code></p>
+}

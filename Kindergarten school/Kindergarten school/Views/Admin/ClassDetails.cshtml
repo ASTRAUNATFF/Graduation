@@ -1,0 +1,137 @@
+﻿@model List<StudentModel>
+
+@{
+    ViewData["Title"] = "Chi Tiết Lớp Học";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #f1f3f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin-top: 60px;
+            max-width: 850px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .detail-item {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+            .detail-item strong {
+                color: #2c3e50;
+            }
+
+        .table {
+            margin-top: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+            .table thead {
+                background-color: #2c3e50;
+                color: #fff;
+            }
+
+            .table tbody tr:hover {
+                background-color: #f2f4f8;
+            }
+
+        .btn-back {
+            width: 100%;
+            font-size: 1.1rem;
+            margin-top: 30px;
+            background-color: #2c3e50;
+            border: none;
+        }
+
+            .btn-back:hover {
+                background-color: #1a252f;
+            }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title"><i class="fas fa-chalkboard icon"></i>Chi Tiết Lớp Học</h2>
+
+        <div>
+            <p class="detail-item"><strong>Tên lớp:</strong> @ViewBag.Class?.ClassName</p>
+            <p class="detail-item"><strong>Số học sinh tối đa:</strong> @ViewBag.Class?.MaxStudent</p>
+            <p class="detail-item"><strong>Thời khóa biểu:</strong> @ViewBag.Class?.Schedule.ToShortDateString()</p>
+        </div>
+
+        <h4 class="mt-4 mb-3" style="color: #2c3e50;">👧👦 Danh Sách Học Sinh</h4>
+
+        <table class="table table-bordered text-center align-middle">
+            <thead>
+                <tr>
+                    <th>Họ và tên</th>
+                    <th>Tuổi</th>
+                    <th>Giới tính</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var student in Model)
+                    {
+                        <tr>
+                            <td>@student.FullName</td>
+                            <td>@student.Age</td>
+                            <td>@student.Gender</td>
+                            <td>
+                                <a asp-controller="Admin" asp-action="StudentEdit" asp-route-id="@student.Id" class="btn btn-sm btn-warning">Sửa</a>
+                                <a asp-controller="Student" asp-action="Delete" asp-route-id="@student.Id" class="btn btn-sm btn-danger" onclick="return confirm('Bạn có chắc muốn xóa học sinh này không?')">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4">Không có học sinh nào trong lớp</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="d-flex flex-column align-items-center gap-3 mt-4">
+            <a asp-controller="Admin" asp-action="StudentCreate" class="btn btn-success btn-lg w-50">
+                + Thêm học sinh mới
+            </a>
+            <a asp-action="ClassDashboard" class="btn btn-primary btn-lg w-50">
+                ← Quay lại
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|d:\\education\\mvc\\bigbackupforgraduation\\kindergarten school\\kindergarten school\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2887F3CE-3FBA-488C-9220-9EE39A99083B}|Kindergarten school\\Kindergarten school.csproj|solutionrelative:kindergarten school\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\Kindergarten school\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kindergarten school\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Education\\MVC\\BigBackupForGraduation\\Kindergarten school\\Kindergarten school\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Kindergarten school\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T03:50:29.454Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

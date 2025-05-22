@@ -1,0 +1,98 @@
+﻿@model List<Kindergarten_school.Models.NotificationSchool>
+
+<style>
+    
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    .gradient-card {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        color: white;
+        border-radius: 16px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        margin: 12px 0;
+        animation: fadeSlide 0.5s ease;
+        overflow: hidden;
+    }
+
+    .gradient-card-header {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 16px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .gradient-card-body {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+        .gradient-card-body::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .gradient-card-body::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+    .gradient-card-title {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .gradient-card-text {
+        font-size: 0.95rem;
+        opacity: 0.9;
+    }
+
+    .back-button {
+        margin-top: 12px;
+        padding: 8px 16px;
+        background-color: #ff7e5f;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .back-button:hover {
+            background-color: #feb47b;
+        }
+</style>
+<button class="back-button" onclick="location.href='https://localhost:7147/profile'">Quay lại</button>
+
+<div class="card gradient-card">
+    <div class="gradient-card-header">✨ Thông báo ✨</div>
+    <div class="card-body">
+        @foreach (var item in Model)
+        {
+            <div class="card gradient-card">
+                <div class="gradient-card-body">
+                    <h5 class="gradient-card-title">📢 @item.content</h5>
+                    <p class="gradient-card-text">🕒 @item.createDate.ToString("HH:mm dd-MM-yyyy")</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/parent-js/notification.js"></script>
+}

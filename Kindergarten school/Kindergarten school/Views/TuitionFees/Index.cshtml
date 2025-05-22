@@ -1,0 +1,365 @@
+﻿@model Kindergarten_school.ViewModel.StudentTuitionViewModel
+@using System.Security.Claims
+
+@{
+    var roleClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role);
+    var role = roleClaim?.Value ?? "";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    h2 {
+        font-weight: bold;
+        color: #343a40;
+    }
+
+    .info-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+    }
+
+    .btn-home {
+        background-color: #28a745;
+        color: white;
+        font-weight: bold;
+        border-radius: 30px;
+    }
+
+        .btn-home:hover {
+            background-color: #138496;
+        }
+
+    .table-container {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .table thead th {
+        background-color: #343a40;
+        color: white;
+    }
+
+    .modal-header {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+
+    .list-group-item {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    #selectedDatesList {
+        max-height: 200px;
+        overflow-y: auto;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+    }
+
+    #summaryCounts .alert {
+        border-radius: 8px;
+    }
+
+    .section-title {
+        border-left: 5px solid #007bff;
+        padding-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #007bff;
+    }
+</style>
+
+
+<h2 class="mb-4 text-center">Thông tin học sinh</h2>
+<div class="info-box">
+    <p><strong>Họ và tên:</strong> @Model.Student.FullName</p>
+    <p><strong>Tuổi:</strong> @Model.Student.Age</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="table-container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="mb-0">Danh sách học phí</h4>
+                <button id="createTuitionBtn" class="btn btn-success">+ Tạo học phí</button>
+            </div>
+            @if (Model.TuitionFees.Any())
+            {
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Số buổi</th>
+                            <th>Số tiền</th>
+                            <th>Trạng thái thanh toán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var fee in Model.TuitionFees)
+                        {
+                            <tr>
+                                <td>@fee.TotalDaysAttended</td>
+                                <td>@fee.Amount.ToString("N0") VND</td>
+                                <td>@fee.Status</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p class="text-muted">Không có học phí nào cho học sinh này.</p>
+            }
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="table-container">
+            <div class="mb-3">
+                <label for="monthPicker" class="form-label">🗓️ Chọn tháng:</label>
+                <input type="month" id="monthPicker" class="form-control" value="@DateTime.Now.ToString("yyyy-MM")" />
+            </div>
+            <div id="summaryCounts" class="mb-3"></div>
+            <div id="attendanceTables"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="tuitionModal" tabindex="-1" aria-labelledby="tuitionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tuitionModalLabel">📋 Xác nhận tạo học phí</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <div class="modal-body">
+                <form id="tuitionForm" onsubmit="handleSubmit(event)">
+                    <div class="mb-3">
+                        <label class="form-label">📘 Tiêu đề học phí</label>
+                        <input type="text" class="form-control" placeholder="Nhập tiêu đề" required id="tuitionTitle" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">💵 Giá mỗi buổi (VND)</label>
+                        <input type="number" class="form-control" placeholder="Nhập giá mỗi buổi" required id="tuitionPrice" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">📅 Các ngày đã chọn:</label>
+                        <ul id="selectedDatesList" class="list-group"></ul>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-primary">✅ Xác nhận</button>
+                        <button type="button" class="btn btn-secondary ms-2" data-bs-dismiss="modal">❌ Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="text-center mt-4">
+    @if (role == "admin")
+    {
+        <a href="/Admin/AdminDashboard" class="btn btn-lg btn-home px-5 shadow-sm">
+            <i class="fas fa-home me-2"></i>Trở về Home
+        </a>
+    }
+    else if (role == "teacher")
+    {
+        <a href="/Admin/TeacherHomeLand" class="btn btn-lg btn-home px-5 shadow-sm">
+            <i class="fas fa-home me-2"></i>Trở về Home
+        </a>
+    }
+    else if (role == "parent")
+    {
+        <a href="/Home/Index" class="btn btn-lg btn-home px-5 shadow-sm">
+            <i class="fas fa-home me-2"></i>Trở về Home
+        </a>
+    }
+</div>
+
+
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var selectedAttendanceIds = [];
+            var studentId = "@Model.Student.StudentID";
+
+            function loadAttendance(year, month) {
+                $.ajax({
+                    url: `/admin/attendance/by-month`,
+                    type: "GET",
+                    data: { studentId: studentId, year: year, month: month },
+                    success: function (data) {
+                        if (data.success) {
+                            let totalAttended = data.attended.length;
+                            let totalMissed = data.missed.length;
+                            $("#summaryCounts").html(`
+                    <div class="alert alert-info">
+                        ✅ Tổng số buổi <strong>đã điểm danh:</strong> ${totalAttended} <br>
+                        ❌ Tổng số buổi <strong>chưa điểm danh:</strong> ${totalMissed}
+                    </div>
+                `);
+                            let attendedHTML = data.attended.map(a => {
+                                // Chuyển đổi attendanceID thành chuỗi để so sánh
+                                const isChecked = selectedAttendanceIds.some(item => item.id === String(a.attendanceID));
+
+                                const isDisabled = a.isTuitionCalculated ? 'disabled' : '';
+                                return `
+                <tr>
+                    <td>
+                        <input type="checkbox" class="attended-checkbox" value="${a.attendanceID}"
+                            ${isChecked ? 'checked' : ''}
+                            data-isTuitionCalculated="${a.isTuitionCalculated}"
+                                    data-date="${a.date}"
+                            ${isDisabled}>
+                        ${a.date}
+                    </td>
+                            <td>${a.status}</td>
+                                             <td>${a.isTuitionCalculated ? "Đã tính học phí" : "Chưa tính học phí"}</td>
+                </tr>
+            `;
+                            }).join("");
+
+                            let missedHTML = data.missed.map(a => `
+                                <tr><td>${a.date}</td><td>${a.status}</td></tr>
+                            `).join("");
+
+                            $("#attendanceTables").html(`
+                                <h4>Buổi điểm danh đã có mặt</h4>
+                                ${attendedHTML ? `
+                                <table class="table table-bordered">
+                                            <thead><tr><th>Ngày</th><th>Trạng thái</th><th>Tình trạng</th></tr></thead>
+                                    <tbody>${attendedHTML}</tbody>
+                                </table>` : `<p>Không có dữ liệu điểm danh đã có mặt.</p>`}
+
+                                <h4>Buổi điểm danh vắng mặt</h4>
+                                ${missedHTML ? `
+                                <table class="table table-bordered">
+                                    <thead><tr><th>Ngày</th><th>Trạng thái</th></tr></thead>
+                                    <tbody>${missedHTML}</tbody>
+                                </table>` : `<p>Không có dữ liệu điểm danh vắng mặt.</p>`}
+                            `);
+                        } else {
+                            $("#attendanceTables").html(`<p>${data.message}</p>`);
+                        }
+                    },
+                    error: function () {
+                        $("#attendanceTables").html(`<p>Lỗi khi tải dữ liệu điểm danh.</p>`);
+                    }
+                });
+            }
+            function updateSelectedDatesList() {
+                const $list = $("#selectedDatesList");
+                $list.empty();
+
+                selectedAttendanceIds.forEach(item => {
+                    $list.append(`<li class="list-group-item">${item.date}</li>`);
+                });
+            }
+            // Tải mặc định khi vào trang
+            const today = new Date();
+            loadAttendance(today.getFullYear(), today.getMonth() + 1);
+
+            // Khi chọn tháng khác
+            $("#monthPicker").change(function () {
+                const [year, month] = $(this).val().split("-");
+                loadAttendance(year, month);
+            });
+            $('#tuitionModal').on('shown.bs.modal', function () {
+                updateSelectedDatesList();
+            });
+            $(document).on('change', '.attended-checkbox', function () {
+                const attendanceId = $(this).val();
+                const attendanceDate = $(this).data('date'); // Lấy ngày từ thuộc tính data
+
+                if ($(this).prop('checked')) {
+                    if (!selectedAttendanceIds.some(x => x.id === attendanceId)) {
+                        selectedAttendanceIds.push({ id: attendanceId, date: attendanceDate });
+                    }
+                } else {
+                    selectedAttendanceIds = selectedAttendanceIds.filter(x => x.id !== attendanceId);
+                }
+                console.log(selectedAttendanceIds)
+            });
+
+
+            $("#createTuitionBtn").click(function () {
+                if (selectedAttendanceIds.length === 0) {
+                    alert("Vui lòng chọn ít nhất 1 buổi để tạo học phí.");
+                    return;
+                }
+
+                const selectedAttendancesList = $("#selectedAttendancesList");
+                $("#tuitionModal").modal('show');
+
+            });
+            window.handleSubmit = function (event) {
+                event.preventDefault(); // Ngừng hành động mặc định của form (không reload trang)
+
+                const tuitionTitle = $("#tuitionTitle").val(); // Lấy giá trị tiêu đề
+                const tuitionPrice = $("#tuitionPrice").val(); // Lấy giá trị giá cho mỗi buổi
+
+                // Kiểm tra nếu các input không trống
+                if (!tuitionTitle || !tuitionPrice) {
+                    alert("Vui lòng nhập đầy đủ thông tin.");
+                    return;
+                }
+                // Tạo đối tượng FormData để gửi dữ liệu
+                const formData = new FormData();
+
+                // Thêm tiêu đề và giá vào FormData
+                formData.append('title', tuitionTitle);
+                formData.append('amount', tuitionPrice);
+                formData.append('studentId', studentId);
+                selectedAttendanceIds.forEach(function (item) {
+                    formData.append('IdAttendance[]', item.id);
+                });
+                // Gửi dữ liệu lên server
+                $.ajax({
+                    url: '/admin/tuition-fees/add-fee', // Địa chỉ URL của API
+                    method: 'POST',
+                    data: formData,
+                    processData: false, // Để jQuery không xử lý dữ liệu
+                    contentType: false, // Để jQuery không tự động đặt content-type
+                    success: function (res) {
+                        if (res.status) {
+                            alert("Tạo học phí thành công!");
+                            selectedAttendanceIds = []; // Reset mảng khi đã tạo học phí
+                            $("#tuitionModal").modal('hide'); // Đóng modal
+                        }else{
+                            alert("Tạo học phí thất bại!");
+                        }
+
+                    },
+                    error: function () {
+                        alert("Có lỗi xảy ra khi tạo học phí.");
+                        $("#tuitionModal").modal('hide'); // Đóng modal nếu có lỗi
+                    }
+                });
+            };
+
+        });
+    </script>
+
+}
